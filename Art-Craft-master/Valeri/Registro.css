@@ -121,5 +121,26 @@ body {
 }
 .logo img {
     width: auto;
-    height: 60px;
+    height: 80px;
 }
+.search-box {
+  position: relative;
+  display: inline-block;
+}
+
+.search-box input {
+  width: 250px;
+  padding: 8px 40px 8px 10px; 
+  border: 1px solid #858484;
+  border-radius: 5px;
+}
+
+.search-box .icon {
+  position: absolute;
+  right: 10px;          
+  top: 50%;            
+  transform: translateY(-50%);
+  color: #333;
+  pointer-events: none; 
+}
+
