@@ -1,45 +1,44 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalle Producto - Art Craft</title>
+  <title>Art Craft - Producto</title>
   <link rel="stylesheet" href="MostrarProducto.css">
 
-  <!-- Iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
   <div class="frame">
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-      <div class="brand">
-        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="logo">
-        <span>ART CRAFT</span>
+
+    <header class="topbar">
+      <div class="logo-section">
+        <img src="Art-Craft-master/Imagenes/Logo2.png" alt="logo-section" class="logo" >
+        <h1>ART CRAFT</h1>
       </div>
 
-      <nav class="menu">
+      <nav class="nav-links">
         <a href="#">Inicio</a>
-
-        <div class="search-box">
-          <input type="text" placeholder="Buscar producto...">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-
-        <div class="nav-icons">
-          <i class="fa-regular fa-user"></i>
-          <i class="fa-regular fa-bell"></i>
-          <i class="fa-solid fa-cart-shopping"></i>
-          <i class="fa-solid fa-bars"></i>
-        </div>
       </nav>
+
+      <div class="search-container">
+        <input type="text" placeholder="Buscar producto....">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="icons">
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-regular fa-bell"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </header>
 
-    <!-- CARD -->
+
     <section class="product-card">
+
       <div class="back-arrow">
         <i class="fa-solid fa-arrow-left"></i>
       </div>
@@ -47,7 +46,7 @@
       <div class="product-content">
 
         <div class="product-image">
-          <img src="https://i.imgur.com/yV4nQ2g.jpg" alt="Mochila Wayuu">
+          <img src="Art-Craft-master/Imagenes/Mochilawayu.png.png" alt="Mochilawayu">
         </div>
 
         <div class="product-info">
@@ -71,57 +70,66 @@
         </div>
       </div>
 
-      <!-- REVIEWS -->
-      <div class="reviews">
-        <h3>Opiniones de nuestros clientes</h3>
+     <div class="reviews">
+  <h3>Opiniones de nuestros clientes</h3>
 
-        <div class="overall-rating">
-          <span>4.8</span>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
+  <div class="overall-rating">
+    <span class="score">4.8</span>
+    <div class="stars-group">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+  </div>
 
-        <div class="review-item">
-          <div class="review-user">
-            <i class="fa-regular fa-user"></i>
-            <span>Laura G</span>
-          </div>
-          <div class="review-stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <p>Hermosa mochila, me encanto su material, <br> todo perfecto.</p>
-        </div>
+  <div class="review-item">
+    <div class="review-user">
+      <i class="fa-regular fa-user"></i>
+      <span>Laura G</span>
+    </div>
 
-        <div class="review-item">
-          <div class="review-user">
-            <i class="fa-regular fa-user"></i>
-            <span>Manuel N</span>
-          </div>
-          <div class="review-stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <p>Hermosa mochila, me encanto su material, <br> todo perfecto.</p>
-        </div>
-      </div>
+    <div class="review-stars">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
 
-      <!-- COMMENT -->
+    <p>Hermosa mochila, me encanto su material, todo perfecto.</p>
+  </div>
+
+  <div class="review-divider"></div>
+
+  <div class="review-item">
+    <div class="review-user">
+      <i class="fa-regular fa-user"></i>
+      <span>Manuel N</span>
+    </div>
+
+    <div class="review-stars">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+
+    <p>Hermosa mochila, me encanto su material, todo perfecto.</p>
+  </div>
+</div>
+
+
       <div class="comment-box">
         <input type="text" placeholder="Deja tu comentario:">
+
         <div class="comment-footer">
           <div class="left-icons">
-            <i class="fa-solid fa-bars"></i>
             <i class="fa-regular fa-star"></i>
             <i class="fa-regular fa-star"></i>
             <i class="fa-regular fa-star"></i>
             <i class="fa-regular fa-star"></i>
             <i class="fa-regular fa-star"></i>
           </div>
+
           <button>Enviar Reseña</button>
         </div>
       </div>
