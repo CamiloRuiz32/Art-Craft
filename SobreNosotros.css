@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #8B1E00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/* CONTENEDOR DEL LOGO */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* IMAGEN DEL LOGO */
+.logo-container img {
+    width: 150px;   
+    height: auto;
+}
+
+/* TEXTO DEL LOGO */
+.logo-container span {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.search input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.icons span {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* TITULO */
+.title {
+    background-color: #B02A00;
+    color: white;
+    padding: 15px 20px;
+}
+
+/* BANNER */
+.banner {
+    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h2 {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* CONTENIDO */
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: #f5e6d3;
+}
+
+/* TARJETAS */
+.card {
+    background: white;
+    width: 300px;
+    border: 1px solid #ccc;
+}
+
+.card h3 {
+    background-color: #8B1E00;
+    color: white;
+    padding: 10px;
+}
+
+.card p {
+    padding: 15px;
+}
+
+.card button {
+    margin: 15px;
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* IMPACTO */
+.impact {
+    text-align: center;
+    padding: 20px;
+}
+
+.impact h2 {
+    font-size: 40px;
+    color: #8B1E00;
+}
