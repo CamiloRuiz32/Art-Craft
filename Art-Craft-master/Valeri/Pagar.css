@@ -1,0 +1,209 @@
+/* Reset básico para evitar desbordamientos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: #1a1a1a;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- HEADER --- */
+.header {
+    background-color: #8b2510;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    color: white;
+    height: 70px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    height: 50px; /* Tamaño fijo para el logo del encabezado */
+    width: auto;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search-container {
+    position: relative;
+    width: 250px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 8px 35px 8px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.search-container i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    align-items: center;
+    /* Cambia white por black o #000 */
+    color: #000; 
+}
+
+/* Si quieres que al pasar el mouse cambien de color o brillen */
+.header-right i {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header-right i:hover {
+    color: #444; /* Un gris oscuro al pasar el mouse */
+}
+
+/* --- TITULO PAGAR --- */
+.page-title-container {
+    background-color: #8b2510;
+    padding: 10px 40px 30px 40px;
+}
+
+.page-title {
+    color: white;
+    font-size: 30px;
+}
+
+/* --- CONTENEDOR DE PAGO --- */
+.payment-container {
+    max-width: 550px;
+    margin: -20px auto 40px; /* Sube un poco para solapar con el fondo rojo */
+    background: #fdf2d9; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.total-label {
+    font-size: 18px;
+    text-align: center;
+    color: #5a1807;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #5a1807;
+    margin-bottom: 20px;
+}
+
+/* --- TABS --- */
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #c5bba3;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.tab {
+    flex: 1;
+    padding: 12px 5px;
+    border: none;
+    background: #eeeecb;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    border-right: 1px solid #c5bba3;
+}
+
+.tab.active {
+    background: #8b2510;
+    color: white;
+}
+
+/* --- FORMULARIO E IMÁGENES --- */
+.card-logos-inline {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+/* ESTO ARREGLA LAS IMÁGENES GIGANTES */
+.card-logos-inline img {
+    height: 25px; 
+    width: auto;
+    display: block;
+}
+
+.card-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+}
+
+.expiry {
+    display: flex;
+    gap: 10px;
+}
+
+/* --- BOTÓN --- */
+.pay-btn {
+    width: 100%;
+    padding: 15px;
+    background: #f2650d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.pay-btn:hover {
+    background: #d4580b;
+}
+

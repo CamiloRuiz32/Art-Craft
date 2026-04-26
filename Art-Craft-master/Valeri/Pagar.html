@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Craft - Pagar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Pagar.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="../Imagenes/Logo2.png" alt="Logo" class="logo-img">
+            <span class="logo-text">ART CRAFT</span>
+        </div>
+        <nav class="nav-center">
+            <a href="#" class="nav-link">Inicio</a>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar producto....">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </nav>
+        <div class="header-right">
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="page-title-container">
+        <h2 class="page-title">Pagar</h2>
+    </div>
+
+    <main class="payment-container">
+        <p class="total-label">Total a pagar:</p>
+        <p class="price">$120.000</p>
+
+        <div class="tabs">
+            <button class="tab active">Tarjeta de crédito/débito</button>
+            <button class="tab">Transferencia Bancaria</button>
+            <button class="tab">Pago Contraentrega</button>
+        </div>
+
+        <form class="card-form">
+            <div class="card-logos-inline">
+                <img src="../Imagenes/Visa.png" alt="Visa">
+                <img src="../Imagenes/Mastercard.png" alt="Mastercard">
+                <img src="../Imagenes/America express.png" alt="Amex">
+            </div>
+
+            <label>Nombre de la Tarjeta</label>
+            <input type="text" class="input-field" placeholder="Nombre completo">
+
+            <label>Número de la tarjeta</label>
+            <input type="text" class="input-field" placeholder="1234 456 45678">
+
+            <label>Vencimiento</label>
+            <div class="expiry">
+                <input type="text" class="input-field" placeholder="MM">
+                <input type="text" class="input-field" placeholder="AA">
+                <input type="text" class="input-field" placeholder="CVV">
+            </div>
+
+            <button type="submit" class="pay-btn">Pagar $120.000</button>
+        </form>
+    </main>
+</body>
+</html>
+
+

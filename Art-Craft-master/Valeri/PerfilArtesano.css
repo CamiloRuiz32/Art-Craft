@@ -1,113 +1,116 @@
-/* GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #5a2e2e, #3a1e1e);
-  color: #fff;
+    font-family: 'serif', 'Georgia', serif;
+    background-color: #fdf2d9; /* Fondo crema de la página */
 }
 
 /* HEADER */
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background: linear-gradient(to right, #7a0000, #ff3c00);
-  padding: 10px 30px;
+.header {
+    background-color: #8b2510;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    color: white;
 }
 
-.logo {
-  height: 60px;
+.header-left { display: flex; align-items: center; gap: 10px; }
+.logo-img { height: 40px; }
+.logo-text { font-size: 22px; font-weight: bold; }
+.nav-center { flex: 1; display: flex; justify-content: center; gap: 20px; }
+.nav-link { color: white; text-decoration: none; }
+.search-container { position: relative; width: 250px; }
+.search-container input { width: 100%; padding: 8px; border-radius: 5px; border: none; }
+.search-container i { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: #333; }
+.header-right { display: flex; gap: 20px; color: #000; font-size: 18px; }
+
+/* BANNER */
+.artisan-banner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    background-color: #000;
 }
 
-.menu a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+.banner-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7; /* Para que el texto se lea mejor */
 }
 
-.search-box {
-  display: flex;
-  align-items: center;
-  background: #fff;
-  border-radius: 20px;
-  padding: 5px 10px;
+.banner-content {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    color: white;
+    z-index: 2;
 }
 
-.search-box input {
-  border: none;
-  outline: none;
-  padding: 5px;
+.banner-content h1 {
+    font-size: 32px;
+    text-decoration: underline;
+    margin-bottom: 10px;
 }
 
-.search-box i {
-  color: #7a0000;
-  margin-left: 5px;
+.artisan-name { font-size: 28px; font-weight: normal; }
+.artisan-location { font-size: 20px; }
+
+/* CONTENIDO PRINCIPAL */
+.info-container {
+    max-width: 1000px;
+    margin: -40px auto 40px; /* Sube para solapar el banner */
+    background: #fdf2d9;
+    padding: 20px;
+    position: relative;
+    border-left: 10px solid #8b2510; /* Borde rojo lateral */
 }
 
-.icons i {
-  color: white;
-  margin: 0 10px;
-  font-size: 20px;
-  cursor: pointer;
+h3 {
+    color: #8b2510;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #8b2510;
+    padding-bottom: 5px;
 }
 
-/* PERFIL ARTESANO */
-.perfil-artesano {
-  text-align: center;
-  padding: 40px 20px;
+.highlight-box {
+    background-color: #8b2510;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 15px;
 }
 
-.foto-artesana {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #fff;
-  margin-bottom: 20px;
+.description {
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
-.perfil-artesano h1 {
-  font-size: 28px;
-  margin: 10px 0;
+/* GRILLA DE CREACIONES */
+.creations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
 }
 
-.perfil-artesano h2 {
-  font-size: 20px;
-  font-weight: normal;
-  color: #ffcc99;
+.creations-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid transparent;
 }
 
-.sobre-mi {
-  max-width: 600px;
-  margin: 20px auto;
-  font-size: 16px;
-  line-height: 1.6;
+.creations-grid img:hover {
+    border-color: #8b2510;
 }
 
-/* GALERÍA */
-.galeria {
-  text-align: center;
-  padding: 30px 20px;
-}
 
-.galeria h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
 
-.imagenes {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 
-.imagenes img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border: 3px solid #fff;
-  border-radius: 10px;
-}
+
 
