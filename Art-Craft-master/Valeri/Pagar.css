@@ -1,4 +1,4 @@
-/* Reset básico para evitar desbordamientos */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,12 +7,12 @@
 
 body {
     font-family: 'Georgia', serif;
-    background: #1a1a1a;
+    background: #fdf2d9; /* BEIGE */
     color: #333;
     line-height: 1.6;
 }
 
-/* --- HEADER --- */
+
 .header {
     background-color: #8b2510;
     display: flex;
@@ -30,7 +30,7 @@ body {
 }
 
 .logo-img {
-    height: 50px; /* Tamaño fijo para el logo del encabezado */
+    height: 50px; 
     width: auto;
 }
 
@@ -80,18 +80,17 @@ body {
     gap: 20px;
     font-size: 18px;
     align-items: center;
-    /* Cambia white por black o #000 */
     color: #000; 
 }
 
-/* Si quieres que al pasar el mouse cambien de color o brillen */
+
 .header-right i {
     cursor: pointer;
     transition: 0.3s;
 }
 
 .header-right i:hover {
-    color: #444; /* Un gris oscuro al pasar el mouse */
+    color: #444; 
 }
 
 /* --- TITULO PAGAR --- */
@@ -105,14 +104,12 @@ body {
     font-size: 30px;
 }
 
-/* --- CONTENEDOR DE PAGO --- */
 .payment-container {
-    max-width: 550px;
-    margin: -20px auto 40px; /* Sube un poco para solapar con el fondo rojo */
-    background: #fdf2d9; 
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+
 }
 
 .total-label {
@@ -154,7 +151,6 @@ body {
     color: white;
 }
 
-/* --- FORMULARIO E IMÁGENES --- */
 .card-logos-inline {
     display: flex;
     gap: 10px;
@@ -162,7 +158,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* ESTO ARREGLA LAS IMÁGENES GIGANTES */
 .card-logos-inline img {
     height: 25px; 
     width: auto;
@@ -189,7 +184,7 @@ body {
     gap: 10px;
 }
 
-/* --- BOTÓN --- */
+
 .pay-btn {
     width: 100%;
     padding: 15px;
