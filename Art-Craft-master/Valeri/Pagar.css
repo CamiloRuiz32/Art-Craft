@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Georgia', serif;
-    background: #fdf2d9; /* BEIGE */
+    background: #fdf2d9; 
     color: #333;
     line-height: 1.6;
 }
@@ -93,7 +93,7 @@ body {
     color: #444; 
 }
 
-/* --- TITULO PAGAR --- */
+
 .page-title-container {
     background-color: #8b2510;
     padding: 10px 40px 30px 40px;
@@ -126,7 +126,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* --- TABS --- */
+
 .tabs {
     display: flex;
     margin-bottom: 20px;
