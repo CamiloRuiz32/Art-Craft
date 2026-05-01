@@ -2,74 +2,52 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Art Craft</title>
+  <title>Categorías - Art Craft</title>
   <link rel="stylesheet" href="categoria.css">
 </head>
 <body>
-
-  <!-- NAVBAR -->
+  <!-- Barra de navegación -->
   <header class="navbar">
-    <div class="logo"> ART CRAFT</div>
+    <div class="logo">ART CRAFT</div>
     <nav>
-      <a href="#">Inicio</a>
+      <a href="index.html">Inicio</a>
+      <input type="text" placeholder="Buscar producto...">
+      <a href="#">Cuenta</a>
+      <a href="#">Favoritos</a>
+      <a href="#">Carrito</a>
     </nav>
-    <input type="text" placeholder="Buscar producto..." class="search">
-    <div class="icons">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
   </header>
 
-  <!-- CONTENIDO -->
-  <main class="container">
-    
-    <!-- CATEGORÍAS -->
-    <div class="categorias">
-      <button class="btn-categoria">Categorías</button>
-      <a href="#">Mochilas</a>
-      <a href="#">Bisutería</a>
-      <a href="#">Cerámica</a>
-      <a href="#">Máscaras</a>
+  <!-- Sección de categorías -->
+  <main>
+    <h1>Categorías</h1>
+    <div class="tabs">
+      <button class="active">Mochilas</button>
+      <button>Bisutería</button>
+      <button>Cerámica</button>
+      <button>Máscaras</button>
     </div>
 
-    <!-- PRODUCTOS -->
-    <div class="grid">
-
-      <div class="card">
-        <img src="https://via.placeholder.com/150" alt="">
+    <!-- Productos de mochilas -->
+    <section class="productos">
+      <div class="producto">
+        <img src="Imagenes/mochila1.png" alt="Mochila artesanal">
         <button>Mostrar</button>
       </div>
-
-      <div class="card">
-        <img src="https://via.placeholder.com/150" alt="">
+      <div class="producto">
+        <img src="Imagenes/mochila2.png" alt="Mochila artesanal">
         <button>Mostrar</button>
       </div>
-
-      <div class="card">
-        <img src="https://via.placeholder.com/150" alt="">
+      <div class="producto">
+        <img src="Imagenes/mochila3.png" alt="Mochila artesanal">
         <button>Mostrar</button>
       </div>
-
-      <div class="card">
-        <img src="https://via.placeholder.com/150" alt="">
-        <button>Mostrar</button>
-      </div>
-
-      <div class="card">
-        <img src="https://via.placeholder.com/150" alt="">
-        <button>Mostrar</button>
-      </div>
-
-      <div class="card">
-        <img src="https://via.placeholder.com/150" alt="">
-        <button>Mostrar</button>
-      </div>
-
-    </div>
-
+      <!-- Agrega más productos según necesites -->
+    </section>
   </main>
 
+  <footer>
+    <p>&copy; 2026 Art Craft</p>
+  </footer>
 </body>
 </html>

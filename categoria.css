@@ -1,101 +1,83 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
 body {
-  background: #8B0000;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fdf6ec;
 }
 
-/* NAVBAR */
 .navbar {
-  background: #a32000;
+  background-color: #a83232;
   color: white;
+  padding: 10px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  align-items: center;
 }
 
-.navbar a {
+.navbar .logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar nav a, .navbar nav input {
+  margin: 0 10px;
   color: white;
   text-decoration: none;
-  margin: 0 10px;
 }
 
-.search {
+.navbar nav input {
   padding: 5px;
   border-radius: 5px;
   border: none;
 }
 
-.icons span {
-  margin-left: 10px;
-  cursor: pointer;
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #a83232;
 }
 
-/* CONTENEDOR */
-.container {
-  background: #e8d3b5;
-  margin: 30px auto;
-  padding: 20px;
-  width: 80%;
-  border-radius: 10px;
-}
-
-/* CATEGORÍAS */
-.categorias {
-  display: flex;
-  align-items: center;
+.tabs {
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.categorias a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: black;
-}
-
-.btn-categoria {
-  background: orange;
+.tabs button {
+  background-color: #e0c097;
   border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  color: white;
-}
-
-/* GRID PRODUCTOS */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  justify-items: center;
-}
-
-/* TARJETAS */
-.card {
-  text-align: center;
-}
-
-.card img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.card button {
-  margin-top: 10px;
-  background: #e67e22;
-  border: none;
-  padding: 5px 15px;
-  border-radius: 5px;
-  color: white;
+  padding: 10px 20px;
+  margin: 5px;
   cursor: pointer;
 }
 
-.card button:hover {
-  background: #d35400;
+.tabs .active {
+  background-color: #a83232;
+  color: white;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.producto {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.producto img {
+  width: 150px;
+  height: auto;
+}
+
+.producto button {
+  margin-top: 10px;
+  background-color: #a83232;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
