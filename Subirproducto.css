@@ -1,0 +1,233 @@
+ /* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Georgia, serif;
+}
+
+body{
+    margin: 0;
+  background:#6e1f00;
+  padding: 0;
+overflow-x: hidden
+;
+}
+
+.container{
+ 
+  width: 100%;       /* ocupa todo el ancho disponible */
+  max-width: 1400px; /* opcional: límite máximo para que no se estire demasiado */
+  margin: auto;
+  background: #e9dcc8;
+}
+
+
+
+
+
+header{
+    background:#992300;
+    height:46px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 18px;
+    width: 100%;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:150px;
+    height: 100px;
+}
+
+.logo span{
+    font-size:18px;
+    color:black;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
+nav i{
+    color:black;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.search{
+    background:white;
+    width:270px;
+    height:26px;
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 10px;
+}
+
+.search input{
+    border:none;
+    outline:none;
+    width:90%;
+}
+
+
+
+.titulo{
+     width:100%;
+    background:#efe1cb;
+    text-align:center;
+    padding:20px 0;
+}
+
+.titulo h1{
+    color:#982000;
+    font-size:28px;
+    border-bottom:1px solid #9e5a3a;
+    display:inline-block;
+}
+
+.titulo p{
+    color:#b44418;
+    font-size:16px;
+    font-weight:bold;
+}
+
+
+
+.contenido {
+  display: flex;
+  gap: 14px;
+  width: 100%;
+  max-width: 1400px; /* opcional */
+  margin: auto;
+  border: 10px solid #dca065;
+  background: #efe1cf;
+  padding: 0 10px;
+}
+
+
+
+
+
+.formulario {
+  width: 100%;
+  max-width: 700px;  /* ajusta según lo que quieras */
+  margin: auto;
+  padding: 10px;
+}
+
+
+.formulario label{
+    display:block;
+    color:#a12800;
+    font-weight:bold;
+    font-size:16px;
+    margin-top:12px;
+    margin-bottom:5px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+    width:100%;
+    border:1px solid #888;
+    padding:6px;
+    font-size:11px;
+}
+
+.formulario textarea{
+    height:72px;
+    resize:none;
+}
+
+.subir{    display: inline-block;   
+    width: 110px;    
+    padding: 6px;  
+    border: 1px solid #777;  
+    background: #f5f0e8;
+    color: #a12800;   
+    font-weight: bold;  
+    cursor: pointer;   
+    text-align: center;}
+
+
+.publicar{
+    display:block;
+    width:250px;
+    height:42px;
+    margin:18px auto 0;
+    background:#ff8500;
+    color:white;
+    border:none;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+
+
+.preview{
+    width:33%;
+    background:#981d00;
+    color:white;
+    text-align:center;
+    padding:10px;
+    position:relative;
+    min-height:290px;
+}
+
+.preview h2{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.producto{
+    width:180px;
+    height:130px;
+    object-fit:cover;
+    border:1px solid white;
+}
+
+.preview h3{
+    margin-top:12px;
+    font-size:17px;
+}
+
+.preview p{
+    margin-top:6px;
+    font-size:13px;
+}
+
+.vasijas{
+    width:180px;
+    position:absolute;
+    bottom:-10px;
+    right:-6px;
+}
+
+
+
+footer{
+     width:100%;
+    margin:0;
+    height:65px;
+    background:linear-gradient(to bottom,#7a0f00,#ff4d00,#7a0f00);
+}
