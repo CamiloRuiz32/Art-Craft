@@ -1,67 +1,69 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Craft - Pagar</title>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Craft - Pagar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="Pagar.css">
 </head>
 <body>
-  <header class="encabezado">
-  <div class="contenedor-encabezado">
-    <p class="logo">ART CRAFT</p>
-    <nav class="navegacion">
-      <div class="contenedor-busqueda">
-        <input type="text" placeholder="Buscar producto...">
-        <i class="fa-solid fa-magnifying-glass"></i>
+  <header>
+    <div class="container">
+      <!-- Logo con imagen -->
+      <div class="logo-container">
+        <img src="Imagenes/Logo2.png" alt="Logo Art Craft" class="logo-img">
+        <p class="logo-text">ART CRAFT</p>
       </div>
-      <a href="#" class="boton">Inicio</a>
-      <a href="#" class="icono"><i class="fa-solid fa-user"></i></a>
-      <a href="#" class="icono"><i class="fa-solid fa-bell"></i></a>
-      <a href="#" class="icono"><i class="fa-solid fa-cart-shopping"></i></a>
-    </nav>
-  </div>
-</header>
 
-   
-    <div class="page-title-container">
-        <h2 class="page-title">Pagar</h2>
+      <nav>
+        <div class="search-container">
+          <input type="text" placeholder="Buscar producto...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <a href="#">Inicio</a>
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <a href="#"><i class="fa-solid fa-bell"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="payment-container">
+    <p class="total-label">Total a pagar:</p>
+    <p class="price">$</p>
+
+    <div class="tabs">
+      <button class="tab active">Tarjeta de crédito/débito</button>
+      <button class="tab">Transferencia Bancaria</button>
+      <button class="tab">Pago Contraentrega</button>
     </div>
 
-    <main class="payment-container">
-        <p class="total-label">Total a pagar:</p>
-        <p class="price">$</p>
+    <form class="card-form">
+      <div class="card-logos-inline">
+        <img src="Imagenes/Visa.png" alt="Visa">
+        <img src="Imagenes/Mastercard.png" alt="Mastercard">
+        <img src="Imagenes/America express.png" alt="Amex">
+      </div>
 
-        <div class="tabs">
-            <button class="tab active">Tarjeta de crédito/débito</button>
-            <button class="tab">Transferencia Bancaria</button>
-            <button class="tab">Pago Contraentrega</button>
-        </div>
+      <label>Nombre de la Tarjeta</label>
+      <input type="text" class="input-field" placeholder="Nombre completo">
 
-        <form class="card-form">
-            <div class="card-logos-inline">
-                <img src="../Imagenes/Visa.png" alt="Visa">
-                <img src="../Imagenes/Mastercard.png" alt="Mastercard">
-                <img src="../Imagenes/America express.png" alt="Amex">
-            </div>
+      <label>Número de la tarjeta</label>
+      <input type="text" class="input-field" placeholder="1234 456 45678">
 
-            <label>Nombre de la Tarjeta</label>
-            <input type="text" class="input-field" placeholder="Nombre completo">
+      <label>Vencimiento</label>
+      <div class="expiry">
+        <input type="text" class="input-field" placeholder="MM">
+        <input type="text" class="input-field" placeholder="AA">
+        <input type="text" class="input-field" placeholder="CVV">
+      </div>
 
-            <label>Número de la tarjeta</label>
-            <input type="text" class="input-field" placeholder="1234 456 45678">
-
-            <label>Vencimiento</label>
-            <div class="expiry">
-                <input type="text" class="input-field" placeholder="MM">
-                <input type="text" class="input-field" placeholder="AA">
-                <input type="text" class="input-field" placeholder="CVV">
-            </div>
-
-            <button type="submit" class="pay-btn">Pagar $</button>
-        </form>
-    </main>
+      <button type="submit" class="pay-btn">Pagar $</button>
+    </form>
+  </main>
 </body>
 </html>
+
+
 
