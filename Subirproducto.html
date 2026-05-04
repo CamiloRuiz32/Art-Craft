@@ -1,0 +1,103 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ART CRAFT</title>
+<link rel="stylesheet" href="Subirproducto.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<header>
+    <div class="logo">
+        <img src="/Art-Craft-master/Imagenes/Logo2.png">
+        <span>ART CRAFT</span>
+    </div>
+
+    <nav>
+        <a href="#">Inicio</a>
+
+        <div class="search">
+            <input type="text" placeholder="Buscar producto...">
+            <i class="fa fa-search"></i>
+        </div>
+
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-regular fa-bell"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-bars"></i>
+    </nav>
+</header>
+
+<section class="titulo">
+    <h1>Subir nuevo producto</h1>
+    <p>Muestra tu arte al mundo</p>
+</section>
+
+<section class="contenido">
+
+    <div class="formulario">
+
+        <label>Nombre del producto</label>
+        <input type="text" placeholder="Ingresa el nombre del producto...">
+
+        <label>Categoria</label>
+        <select>
+            <option>Seleccionar categoria</option>
+            
+    
+    <option>Tejidos</option>
+    <option>Cerámica</option>
+    <option>Madera</option>
+    <option>Joyería</option>
+    <option>Pinturas</option>
+    <option>Decoración</option>
+    <option>Mochilas</option>
+    <option>Accesorios</option>
+
+        </select>
+
+        <label>Descripción</label>
+        <textarea placeholder="Descripción del producto..."></textarea>
+
+        <label>Precio</label>
+        <input type="text" placeholder="Digite el valor del producto...">
+
+      <label for="imagen" class="subir">
+            <i class="fa fa-upload"></i> Subir Imagen
+       </label>
+
+<input type="file" id="imagen" hidden>
+        <button class="publicar">PUBLICAR PRODUCTO</button>
+
+    </div>
+
+    <div class="preview">
+
+        <h2>Vista Previa</h2>
+
+        <img src="/Art-Craft-master/Imagenes/Mochila.png" class="producto">
+
+        <h3>Mochila Wayu</h3>
+
+        <p>Precio: $450.000</p>
+        <p>Categoria: Tejidos</p>
+
+        <img src="/Art-Craft-master/Imagenes/vacijass.png" class="vasijas">
+
+    </div>
+
+</section>
+
+<footer></footer>
+
+</div>
+
+
+</body>
+</html>

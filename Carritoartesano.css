@@ -1,0 +1,267 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Georgia, serif;
+}
+
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;   /* centra horizontal */
+    align-items:flex-start;   /* arriba */
+    min-height:100vh;
+    background:#6e1f00;
+}
+
+.contenedor{
+    width:100%;        /* ocupa todo el ancho */
+    max-width:1400px;  /* opcional: límite máximo */
+    margin:auto;
+    background:#eadbc4;
+    min-height:70vh;
+}
+
+header{
+    height:36px;
+    background:#9c2300;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 10px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.logo img{
+    width:120px;
+    height:110px;
+    object-fit:contain;
+}
+
+.logo span{
+    font-size:14px;
+    color:black;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:12px;
+}
+
+nav i{
+    font-size:14px;
+    color:black;
+}
+
+.buscar{
+    width:190px;
+    height:22px;
+    background:white;
+    border-radius:4px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 8px;
+}
+
+.buscar input{
+    width:85%;
+    border:none;
+    outline:none;
+    font-size:11px;
+}
+
+.titulo-principal{
+    background:#c22f00;
+    color:white;
+    font-size:18px;
+    padding:6px 10px;
+}
+
+.principal{
+    display:flex;
+    align-items:flex-start;
+}
+
+.productos{
+    width:66%;
+    padding:8px;
+}
+
+.productos h2{
+    color:#b33800;
+    font-size:18px;
+    border-bottom:1px solid #d3a18b;
+    padding-bottom:4px;
+    margin-bottom:10px;
+}
+
+.producto{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    padding:10px 0;
+    border-bottom:1px solid #d3a18b;
+}
+
+.producto img{
+    width:102px;
+    height:110px;
+    object-fit:cover;
+}
+
+.detalle{
+    width:150px;
+}
+
+.detalle h3{
+    font-size:16px;
+    font-weight:normal;
+    margin-bottom:2px;
+}
+
+.detalle p{
+    font-size:16px;
+}
+
+
+.cantidad{
+    width:110px;
+    text-align:center;
+}
+
+.controles{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:4px;
+}
+
+.cantidad button{
+    width:24px;
+    height:24px;
+    border:1px solid #d6a27b;
+    background:#f7dfc8;
+    cursor:pointer;
+}
+
+.cantidad span{
+    width:20px;
+    display:inline-block;
+}
+
+.cantidad a{
+    display:block;
+    margin-top:4px;
+    font-size:12px;
+    color:#ff6600;
+    text-decoration:none;
+}
+
+
+.resumen{
+    flex: 2;
+    padding:8px;
+    border-left:1px solid #9d8d7d;
+}
+
+.resumen h2{
+    color:#b33800;
+    font-size:18px;
+    border-bottom:1px solid #d3a18b;
+    padding-bottom:4px;
+    margin-bottom:10px;
+}
+
+.fila{
+    display:flex;
+    justify-content:space-between;
+    padding:14px 0;
+    border-bottom:1px solid #d3a18b;
+    font-size:16px;
+}
+
+.pagar{
+    width:100%;
+    margin-top:12px;
+    padding:10px;
+    border:none;
+    background:#f57c00;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+
+.inferior{
+     display:flex;
+    gap:20px;       /* espacio entre columnas */
+    width:100%;
+    max-width:1400px;
+    margin:auto;
+    
+}
+.datos{
+  flex: 2;
+  padding: 8px;
+}
+
+.datos h2{
+    color:#b33800;
+    font-size:18px;
+    border-bottom:1px solid #d3a18b;
+    padding-bottom:4px;
+    margin-bottom:10px;
+}
+
+.datos p{
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+.datos input{
+    width:55%;
+    display:block;
+    margin-bottom:6px;
+    padding:6px;
+    border:none;
+    background:#f2f2f2;
+    font-size:11px;
+}
+
+
+.pago{
+    flex: 2;
+    padding:8px;
+    border-left:1px solid #9d8d7d;
+}
+
+.pago h2{
+    color:#b33800;
+    font-size:18px;
+    border-bottom:1px solid #d3a18b;
+    padding-bottom:4px;
+    margin-bottom:10px;
+}
+
+.pago label{
+    display:block;
+    padding:8px 0;
+    font-size:14px;
+    border-bottom:1px solid #d3a18b;
+}

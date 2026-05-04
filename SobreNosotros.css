@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fdf6ec;
+}
+
+.hero {
+  background-image: url("Imagenes/artesanias-mexicanas-jpg-135935-1024x576.jpg"); /* coloca aquí tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+}
+
+.hero .overlay {
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.mision, .impacto {
+  padding: 40px;
+  text-align: center;
+}
+
+.mision h2, .impacto h2 {
+  color: #a83232;
+}
+
+.mision button {
+  margin-top: 15px;
+  background-color: #a83232;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.impacto-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.impacto-contenido img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #a83232;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

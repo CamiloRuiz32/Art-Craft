@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #fdf6ec;
+}
+
+.navbar {
+  background-color: #a83232;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar nav a, .navbar nav input {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar nav input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #a83232;
+}
+
+.tabs {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background-color: #e0c097;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.tabs .active {
+  background-color: #a83232;
+  color: white;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.producto {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.producto img {
+  width: 150px;
+  height: auto;
+}
+
+.producto button {
+  margin-top: 10px;
+  background-color: #a83232;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
