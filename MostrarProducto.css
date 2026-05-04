@@ -1,5 +1,6 @@
 
 *{
+<<<<<<< HEAD
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -273,3 +274,68 @@ body{
     font-size:17px;
     cursor:pointer;
 }
+=======
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: "Roboto",sans-serif;
+  margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+button{
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color: white;
+  background-color: #f57c00;
+}
+button:hover{
+  background-color: #a55505;
+}
+.container{
+  max-width: 1440px;
+  margin:auto;
+}
+.color-acento{color: #a55505;}
+
+header{
+  background: linear-gradient(to right, #b71c1c, #d32f2f);
+}
+header .logo{
+  margin: 0;
+  padding: 25px 30px;
+  font-weight:bold;
+  color: black;
+  font-size: 1.40em;
+}
+header .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav{
+  display: flex;
+  text-align: right;
+  gap: 15px;
+}
+nav a{
+  padding: 5px 12px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-decoration: none;
+}
+header a:hover{
+    color: #ffffff;}
+>>>>>>> dcb6c9ad853d1c782b6596bdb9fedb4c143c4ef8

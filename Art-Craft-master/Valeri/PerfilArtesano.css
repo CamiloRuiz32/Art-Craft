@@ -5,6 +5,7 @@
 }
 
 body {
+<<<<<<< HEAD
     font-family: 'Georgia', serif;
     background-color: #fdf2d9; 
 }
@@ -90,6 +91,33 @@ body {
 }
 
 /* ====== BANNER ====== */
+=======
+    font-family: 'serif', 'Georgia', serif;
+    background-color: #fdf2d9; /* Fondo crema de la página */
+}
+
+/* HEADER */
+.header {
+    background-color: #8b2510;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    color: white;
+}
+
+.header-left { display: flex; align-items: center; gap: 10px; }
+.logo-img { height: 40px; }
+.logo-text { font-size: 22px; font-weight: bold; }
+.nav-center { flex: 1; display: flex; justify-content: center; gap: 20px; }
+.nav-link { color: white; text-decoration: none; }
+.search-container { position: relative; width: 250px; }
+.search-container input { width: 100%; padding: 8px; border-radius: 5px; border: none; }
+.search-container i { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: #333; }
+.header-right { display: flex; gap: 20px; color: #000; font-size: 18px; }
+
+/* BANNER */
+>>>>>>> dcb6c9ad853d1c782b6596bdb9fedb4c143c4ef8
 .artisan-banner {
     position: relative;
     height: 400px;
@@ -101,7 +129,11 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+<<<<<<< HEAD
     opacity: 0.7; 
+=======
+    opacity: 0.7; /* Para que el texto se lea mejor */
+>>>>>>> dcb6c9ad853d1c782b6596bdb9fedb4c143c4ef8
 }
 
 .banner-content {
@@ -121,6 +153,7 @@ body {
 .artisan-name { font-size: 28px; font-weight: normal; }
 .artisan-location { font-size: 20px; }
 
+<<<<<<< HEAD
 /* ====== INFO ====== */
 .info-container {
     max-width: 1000px;
@@ -136,10 +169,28 @@ h3 {
     font-size: 26px;
     margin-bottom: 15px;
     border-bottom: 1px solid #8c1d0d;
+=======
+/* CONTENIDO PRINCIPAL */
+.info-container {
+    max-width: 1000px;
+    margin: -40px auto 40px; /* Sube para solapar el banner */
+    background: #fdf2d9;
+    padding: 20px;
+    position: relative;
+    border-left: 10px solid #8b2510; /* Borde rojo lateral */
+}
+
+h3 {
+    color: #8b2510;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #8b2510;
+>>>>>>> dcb6c9ad853d1c782b6596bdb9fedb4c143c4ef8
     padding-bottom: 5px;
 }
 
 .highlight-box {
+<<<<<<< HEAD
     background-color: #8c1d0d;
     color: white;
     padding: 10px 20px;
@@ -153,6 +204,20 @@ h3 {
 }
 
 /* ====== CREACIONES ====== */
+=======
+    background-color: #8b2510;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* GRILLA DE CREACIONES */
+>>>>>>> dcb6c9ad853d1c782b6596bdb9fedb4c143c4ef8
 .creations-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -167,7 +232,11 @@ h3 {
 }
 
 .creations-grid img:hover {
+<<<<<<< HEAD
     border-color: #8c1d0d;
+=======
+    border-color: #8b2510;
+>>>>>>> dcb6c9ad853d1c782b6596bdb9fedb4c143c4ef8
 }
 
 
@@ -175,6 +244,9 @@ h3 {
 
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> dcb6c9ad853d1c782b6596bdb9fedb4c143c4ef8
