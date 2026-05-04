@@ -1,99 +1,3 @@
-<<<<<<< HEAD
-body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  background: #e6d2b5;
-}
-
-/* ====== HEADER ====== */
-.header {
-  background: #8c1d0d;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px; /* grosor del rojo se mantiene */
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: bold;
-  color: rgb(3, 3, 3);
-}
-
-.logo img {
-  height: 70px;   /* tamaño del logo tal cual tu prototipo */
-  width: auto;
-}
-
-.logo span {
-  font-size: 36px; /* título ART CRAFT más grande */
-  font-weight: bold;
-  color: #000;
-  line-height: 1;
-}
-
-/* ====== BUSCADOR ====== */
-.contenedor-busqueda {
-  position: relative;
-  display: inline-block;
-}
-
-.search-box {
-  padding: 8px 35px 8px 12px; /* espacio a la derecha para la lupa */
-  border-radius: 20px;
-  border: none;
-  outline: none;
-}
-
-.contenedor-busqueda i {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #8c1d0d;
-  pointer-events: none; /* no bloquea la escritura */
-}
-
-.nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.nav-icons a {
-  color: black;
-  background: #fff;
-  padding: 8px 12px;
-  border-radius: 20px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.nav-icons a:hover {
-  background: #000;
-  color: #fff;
-}
-
-.titulo {
-  background: #a52a0a;
-  color: white;
-  padding: 10px 20px;
-  font-size: 26px;
-}
-
-
-.container {
-  padding: 30px;
-}
-
-.total {
-  text-align: center;
-  font-size: 24px;
-  color: #7a1c0c;
-=======
 
 * {
     box-sizing: border-box;
@@ -220,79 +124,10 @@ body {
     text-align: center;
     color: #5a1807;
     margin-bottom: 20px;
->>>>>>> dcb6c9ad853d1c782b6596bdb9fedb4c143c4ef8
 }
 
 
 .tabs {
-<<<<<<< HEAD
-  display: flex;
-  margin-top: 20px;
-}
-
-.tab {
-  padding: 15px;
-  flex: 1;
-  text-align: center;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  background: #e6d2b5;
-}
-
-.tab.active {
-  background: #a52a0a;
-  color: white;
-}
-
-
-.form {
-  border: 1px solid #ccc;
-  padding: 20px;
-  background: #e6d2b5;
-}
-
-.input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-}
-
-.row {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.cards {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.cards img {
-  width: 50px;
-  height: auto;
-}
-
-/* ====== BOTÓN ====== */
-.btn {
-  margin-top: 20px;
-  background: #ff6600;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.btn:hover {
-  background: #e65c00;
-}
-
-
-
-=======
     display: flex;
     margin-bottom: 20px;
     border: 1px solid #c5bba3;
@@ -367,4 +202,3 @@ body {
     background: #d4580b;
 }
 
->>>>>>> dcb6c9ad853d1c782b6596bdb9fedb4c143c4ef8
