@@ -1,6 +1,7 @@
 
+
 *{
-<<<<<<< HEAD
+ 
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -274,68 +275,258 @@ body{
     font-size:17px;
     cursor:pointer;
 }
-=======
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+ 
   box-sizing: border-box;
 }
 
-
-body{
-  font-family: "Roboto",sans-serif;
-  margin: 0;
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e6d2b5;
 }
 
-h1{ font-size: 3.5em;}
-h2{font-size: 2.7em;}
-h3{font-size: 2em;}
-p{font-size: 1.25em;}
-
-button{
-  font-size: 1.5em;
-  font-weight: bold;
+/* ===== ENCABEZADO ===== */
+header {
+  background-color: #8c1d0d;
   padding: 10px 20px;
-  border-radius: 4px;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-  color: white;
-  background-color: #f57c00;
 }
-button:hover{
-  background-color: #a55505;
-}
-.container{
-  max-width: 1440px;
-  margin:auto;
-}
-.color-acento{color: #a55505;}
 
-header{
-  background: linear-gradient(to right, #b71c1c, #d32f2f);
-}
-header .logo{
-  margin: 0;
-  padding: 25px 30px;
-  font-weight:bold;
-  color: black;
-  font-size: 1.40em;
-}
-header .container{
+.contenedor-header {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+/* ===== NAV ===== */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ===== BUSCADOR ===== */
+/* ===== BUSCADOR ===== */
+.contenedor-busqueda {
+  position: relative;
+  display: flex;
   align-items: center;
 }
 
-header nav{
+.search-box {
+  width: 250px;
+  padding: 10px 40px 10px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Lupa dentro del input */
+.contenedor-busqueda i {
+  position: absolute;
+  right: 15px;
+  color: #8c1d0d;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ===== ICONOS ===== */
+.nav-icons {
   display: flex;
-  text-align: right;
-  gap: 15px;
+  align-items: center;
+  gap: 12px;
 }
-nav a{
-  padding: 5px 12px;
-  font-weight: bold;
-  color: rgb(0, 0, 0);
-  font-size: 18px;
+
+.nav-icons a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #000;
+  border-radius: 50%;
   text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 18px;
 }
+ HEAD
 header a:hover{
-    color: #ffffff;}
->>>>>>> dcb6c9ad853d1c782b6596bdb9fedb4c143c4ef8
+    color: #ffffff;
+}
+
+.nav-icons a:first-child {
+  width: auto;
+  padding: 0 15px;
+  border-radius: 20px;
+}
+
+.nav-icons a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.nav-icons a:active {
+  transform: scale(0.95);
+}
+
+/* ===== PRODUCTO ===== */
+.tarjeta-producto {
+  width: 100%;
+  background: #f2e4cc;
+  padding: 30px;
+}
+
+.volver {
+  font-size: 28px;
+  color: #2b1d1a;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.seccion-superior {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.imagen-producto img {
+  width: 320px;
+  border-radius: 8px;
+}
+
+.info-producto {
+  flex: 1;
+}
+
+.info-producto h1 {
+  font-size: 42px;
+  color: #2b1d1a;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #8f0d00;
+}
+
+.info-producto p {
+  font-size: 22px;
+  color: #3b2a20;
+  margin-bottom: 20px;
+}
+
+.precio {
+  font-size: 38px;
+  font-weight: bold;
+  color: #8f0d00;
+  margin-bottom: 20px;
+}
+
+/* ===== BOTONES ===== */
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px;
+  margin-bottom: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.btn-carrito {
+  background: #e9a45d;
+  color: white;
+}
+
+.btn-comprar {
+  background: #c92f00;
+  color: white;
+}
+
+.btn:hover,
+.btn-enviar:hover {
+  transform: scale(1.05);
+}
+
+.activo {
+  box-shadow: 0 0 15px #fff;
+  border: 2px solid #fff;
+}
+
+/* ===== OPINIONES ===== */
+.opiniones {
+  margin-top: 40px;
+}
+
+.opiniones h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.calificacion {
+  font-size: 40px;
+  color: #e0641d;
+}
+
+.comentario {
+  padding: 15px 0;
+  border-bottom: 1px solid #c92f00;
+  font-size: 20px;
+}
+
+/* ===== RESEÑA ===== */
+.reseña-box {
+  margin-top: 25px;
+  background: #ffffff;
+  padding: 20px;
+}
+
+.reseña-box textarea {
+  width: 100%;
+  height: 100px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.estrellas {
+  margin: 15px 0;
+}
+
+.estrellas span {
+  font-size: 35px;
+  cursor: pointer;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.estrellas span.seleccionada {
+  color: #e0641d;
+}
+
+.btn-enviar {
+  background: #e0641d;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
