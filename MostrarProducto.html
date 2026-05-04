@@ -6,125 +6,132 @@
   <title>Art Craft - Producto</title>
   <link rel="stylesheet" href="MostrarProducto.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="MostrarProducto.css">
 </head>
 <body>
-  <Header>
-    <div class="container">
-      <p class="logo">ART CRAFT</p>
-      <nav>
-          <a href="#">Inicio</a>
-          <div class="search-container">
-        <input type="text" placeholder="Buscar producto....">
-        <i class="fa-solid fa-magnifying-glass"></i>
+
+  <!-- ====== HEADER ====== -->
+  <header>
+    <div class="contenedor-header">
+
+      <!-- LOGO -->
+      <div class="logo">
+        <img src="Art-Craft-master/Imagenes/Logo2.png" alt="Logo Art Craft">
+        <span>ART CRAFT</span>
       </div>
+
+      <!-- NAV -->
+      <nav>
+        <div class="nav-icons">
+
+          <!-- BUSCADOR -->
+          <div class="contenedor-busqueda">
+            <input class="search-box" type="text" placeholder="Buscar producto...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+          <!-- BOTONES -->
+          <a href="#">Inicio</a>
           <a href="#"><i class="fa-solid fa-user"></i></a>
           <a href="#"><i class="fa-solid fa-bell"></i></a>
           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-          <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
       </nav>
+
     </div>
-  </Header>
+  </header>
 
-    <section class="product-card">
+  <!-- ====== PRODUCTO ====== -->
+  <section class="producto-detalle">
+    <div class="tarjeta-producto">
 
-      <div class="back-arrow">
+      <!-- Flecha -->
+      <div class="volver">
         <i class="fa-solid fa-arrow-left"></i>
       </div>
 
-      <div class="product-content">
+      <!-- Parte superior -->
+      <div class="seccion-superior">
 
-        <div class="product-image">
-          <img src="Art-Craft-master/Imagenes/Mochilawayu.png.png" alt="Mochilawayu">
+        <!-- Imagen -->
+        <div class="imagen-producto">
+          <img src="Art-Craft-master/Imagenes/Mochilawayu.png.png" alt="Mochila Wayuu">
         </div>
 
-        <div class="product-info">
+        <!-- Información -->
+        <div class="info-producto">
           <h1>Mochila Wayuu</h1>
-          <p>
-            Tejidas con hilos que cuentan historias del <br>
-            agua y la naturaleza
-          </p>
+          <p>Tejidas con hilos que cuentan historias del agua y la naturaleza</p>
 
-          <h2>$120.0000</h2>
+          <div class="precio">$120.000</div>
 
-          <button class="btn cart-btn">
+          <button class="btn btn-carrito" onclick="seleccionarBoton(this)">
             <i class="fa-solid fa-cart-shopping"></i>
             Agregar al carrito
           </button>
 
-          <button class="btn buy-btn">
+          <button class="btn btn-comprar" onclick="seleccionarBoton(this)">
             <i class="fa-solid fa-house"></i>
             Comprar ahora
           </button>
         </div>
       </div>
 
-     <div class="reviews">
-  <h3>Opiniones de nuestros clientes</h3>
+      <!-- Opiniones -->
+      <div class="opiniones">
+        <h2>Opiniones de nuestros clientes</h2>
 
-  <div class="overall-rating">
-    <span class="score">4.8</span>
-    <div class="stars-group">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-    </div>
-  </div>
+        <div class="calificacion">4.8 ★★★★☆</div>
 
-  <div class="review-item">
-    <div class="review-user">
-      <i class="fa-regular fa-user"></i>
-      <span>Laura G</span>
-    </div>
+        <div class="comentario">
+          <strong>Laura G</strong> ★★★★☆ <br>
+          Hermosa mochila, me encantó su material, todo perfecto.
+        </div>
 
-    <div class="review-stars">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-    </div>
-
-    <p>Hermosa mochila, me encanto su material, todo perfecto.</p>
-  </div>
-
-  <div class="review-divider"></div>
-
-  <div class="review-item">
-    <div class="review-user">
-      <i class="fa-regular fa-user"></i>
-      <span>Manuel N</span>
-    </div>
-
-    <div class="review-stars">
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-      <i class="fa-solid fa-star"></i>
-    </div>
-
-    <p>Hermosa mochila, me encanto su material, todo perfecto.</p>
-  </div>
-</div>
-
-
-      <div class="comment-box">
-        <input type="text" placeholder="Deja tu comentario:">
-
-        <div class="comment-footer">
-          <div class="left-icons">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-          </div>
-
-          <button>Enviar Reseña</button>
+        <div class="comentario">
+          <strong>Manuel N</strong> ★★★☆☆ <br>
+          Hermosa mochila, me encantó su material, todo perfecto.
         </div>
       </div>
 
-    </section>
-  </div>
+      <!-- Caja comentario -->
+      <div class="reseña-box">
+        <textarea placeholder="Deja tu comentario:"></textarea>
+
+        <div class="estrellas">
+          <span onclick="seleccionarEstrella(this)">★</span>
+          <span onclick="seleccionarEstrella(this)">★</span>
+          <span onclick="seleccionarEstrella(this)">★</span>
+          <span onclick="seleccionarEstrella(this)">★</span>
+          <span onclick="seleccionarEstrella(this)">★</span>
+        </div>
+
+        <button class="btn-enviar" onclick="seleccionarBoton(this)">
+          Enviar Reseña
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    function seleccionarBoton(boton) {
+      document.querySelectorAll('.btn, .btn-enviar').forEach(btn => {
+        btn.classList.remove('activo');
+      });
+      boton.classList.add('activo');
+    }
+
+    function seleccionarEstrella(estrella) {
+      let estrellas = estrella.parentElement.querySelectorAll('span');
+      estrellas.forEach((s, index) => {
+        if (index <= [...estrellas].indexOf(estrella)) {
+          s.classList.add('seleccionada');
+        } else {
+          s.classList.remove('seleccionada');
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>
