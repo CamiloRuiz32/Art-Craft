@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: #fdf2d9;
+  color: #333;
+  line-height: 1.6;
+}
+header {
+  background-color: #8b2510;
+  padding: 5px 40px;
+  border-radius: 10px 10px 0 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-img {
+  height: 120px;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 42px;
+  font-weight: bold;
+  color: #000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container input {
+  width: 220px;
+  padding: 10px 35px 10px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+.search-container i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8b2510;
+  cursor: pointer;
+}
+
+nav a {
+  background-color: white;
+  color: #8b2510;
+  border-radius: 25px;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #000;
+  color: white;
+}
+.artisan-banner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.banner-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7; /* Para que el texto se lea mejor */
+}
+
+.banner-content {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    color: white;
+    z-index: 2;
+}
+
+.banner-content h1 {
+    font-size: 32px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.artisan-name { font-size: 28px; font-weight: normal; }
+.artisan-location { font-size: 20px; }
+
+/* CONTENIDO PRINCIPAL */
+.info-container {
+    max-width: 1000px;
+    margin: -40px auto 40px; /* Sube para solapar el banner */
+    background: #fdf2d9;
+    padding: 20px;
+    position: relative;
+    border-left: 10px solid #8b2510; /* Borde rojo lateral */
+}
+
+h3 {
+    color: #8b2510;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #8b2510;
+    padding-bottom: 5px;
+}
+
+.highlight-box {
+    background-color: #8b2510;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* GRILLA DE CREACIONES */
+.creations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.creations-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid transparent;
+}
+
+.creations-grid img:hover {
+    border-color: #8b2510;
+}
