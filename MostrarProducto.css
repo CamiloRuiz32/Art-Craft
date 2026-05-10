@@ -1,28 +1,27 @@
-<<<<<<< HEAD
-/* Reset */
-=======
 
 
 *{
- 
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Georgia, serif;
 }
 
 body{
-    width:100%;
-    min-height:100vh;
-    background:#1f1f1f;
+     width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+     background:#1f1f1f;
 }
 
 
 .frame{
-    width:100%;
-    min-height:100vh;
-    background:linear-gradient(to bottom,#7d0b00,#a31200);
-    padding:20px;
+ width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #7d0b00, #a31200);
+    padding: 0;
 }
 
 .topbar{
@@ -100,7 +99,7 @@ body{
     width:100%;
     min-height:calc(100vh - 140px);
     background:#f0dfc8;
-    border:3px solid #1694ff;
+   border:none;
     border-radius:16px;
     padding:28px;
 }
@@ -280,16 +279,12 @@ body{
 }
 
 /* ===== RESET ===== */
->>>>>>> 2e7e86903ab6bdbaf8f4f272d40b9cc50cef67d1
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
-=======
  
   box-sizing: border-box;
->>>>>>> 2e7e86903ab6bdbaf8f4f272d40b9cc50cef67d1
 }
 
 body {
@@ -303,7 +298,8 @@ body {
 header {
   background-color: #8b2510;
   padding: 5px 40px;
-  border-radius: 10px 10px 0 0;
+  width: 100%;
+  border-radius: 0;
 }
 
 .container {
@@ -379,7 +375,6 @@ nav i:active {
 nav i {
   font-size: 18px;
 }
- HEAD
 header a:hover{
     color: #ffffff;
 }
