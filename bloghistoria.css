@@ -1,7 +1,4 @@
-/* ===========================
-   ESTILO COMPLETO PANTALLA WEB
-=========================== */
-
+/* RESET */
 *{
     margin:0;
     padding:0;
@@ -9,84 +6,110 @@
     font-family:Georgia, serif;
 }
 
+/* BODY */
 body{
-      background:#6e1f00;
+    background:#6e1f00;
+    min-height:100vh;
 }
 
-/* CONTENEDOR PRINCIPAL */
+/* CONTENEDOR */
 .contenedor{
-    width:95%;
+    width:100%;
+    background:#eadbc4;
     min-height:100vh;
-    margin:auto;
-    background:#efe1cb;
 }
 
 /* ================= HEADER ================= */
+
 header{
     width:100%;
-    height:60px;
-    background:#9c2200;
+    background-color:#8b2510;
+    padding:10px 40px;
+}
+
+.container{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 30px;
 }
 
 /* LOGO */
-.logo{
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo-img{
+    height:120px;
+    width:auto;
+}
+
+.logo-text{
+    font-size:58px;
+    font-weight:bold;
+    color:black;
+}
+
+/* NAV */
+
+nav{
     display:flex;
     align-items:center;
     gap:15px;
 }
 
-.logo img{
-    width:200px;
-    height:170px;
-}
-
-.logo span{
-    font-size:34px;
-    color:black;
-}
-
-/* MENU */
-nav{
-    display:flex;
-    align-items:center;
-    gap:28px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    font-size:20px;
-}
-
-nav i{
-    font-size:24px;
-    color:black;
-    cursor:pointer;
-}
-
 /* BUSCADOR */
-.buscar{
-    width:420px;
-    height:38px;
-    background:white;
-    border-radius:6px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 12px;
+
+.search-container{
+    position:relative;
 }
 
-.buscar input{
-    width:88%;
+.search-container input{
+    width:420px;
+    padding:14px 50px 14px 20px;
+    border-radius:30px;
     border:none;
     outline:none;
-    font-size:16px;
+    font-size:18px;
 }
 
+.search-container i{
+    position:absolute;
+    right:18px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#8b2510;
+    font-size:22px;
+}
+
+/* BOTONES NAV */
+
+nav a{
+    background:white;
+    color:#8b2510;
+    border-radius:50px;
+    padding:12px 18px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:20px;
+    transition:0.3s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+nav a:hover{
+    background:black;
+    color:white;
+}
+
+/* ICONOS */
+
+nav a i{
+    font-size:22px;
+}
 /* ================= TITULO ================= */
 .titulo{
     background:#7b1200;
