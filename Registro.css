@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+/* ====== ENCABEZADO Y RESET ====== */
+=======
 /* ====== ENCABEZADO ====== */
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +12,26 @@
 body {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
+  height: 100%;
+  width: 100%;
+  background-color: #731A04; 
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #8c1d0d;
+  padding: 0px 20px;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+=======
    height: 100%;
   width: 100%;
   background-color: #731A04; 
@@ -19,12 +43,32 @@ header {
   padding: 0px 20px;
   
 }
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 .logo {
   display: flex;
   align-items: center;   
   flex-shrink: 0;
   margin-left: 40px;  
 }
+<<<<<<< HEAD
+
+.logo img {
+  width: 90px;
+}
+
+/* ====== COMPORTAMIENTO DE ICONOS (LIMPIO) ====== */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* Diseño unificado para botones circulares blancos */
+.nav-icons > a,
+.menu-container .btn-menu {
+=======
 .logo img {
  width: 90px;
 }
@@ -68,6 +112,7 @@ nav a {
   border-radius: 20px;
 }
 .nav-icons a{
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
   width: 45px;
   height: 45px;
   background: white;
@@ -79,6 +124,40 @@ nav a {
   text-decoration: none;
   transition: 0.3s;
   font-weight: bold;
+<<<<<<< HEAD
+  cursor: pointer;
+}
+
+/* Botón alargado especial de "Inicio" */
+.nav-icons > a:first-child {
+  width: auto;
+  padding: 0 18px;
+  border-radius: 20px;
+}
+
+/* Estados Hover y Active sin duplicados */
+.nav-icons > a:hover,
+.menu-container .btn-menu:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.nav-icons > a:active,
+.menu-container .btn-menu:active {
+  background: #931212;
+  color: #ffffff;
+}
+
+/* ====== BUSCADOR FLUIDO ====== */
+.contenedor-busqueda {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+=======
 }
 .nav-icons a:hover{
     background:#000;
@@ -102,6 +181,7 @@ nav a {
   display: flex;
   justify-content: center;
 }
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 .search-box {
   width: 100%;
   max-width: 650px;
@@ -112,6 +192,64 @@ nav a {
   padding: 0 45px 0 15px;
   font-size: 16px;
 }
+<<<<<<< HEAD
+
+.contenedor-busqueda i {
+  position: absolute;
+  right: calc(50% - 325px + 20px);
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000000;
+  pointer-events: none;
+}
+
+/* ====== COMPORTAMIENTO DEL MENÚ DESPLEGABLE ====== */
+.menu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.menu-lateral {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 260px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 9999;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.menu-lateral a {
+  color: #8c1d0d;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: serif;
+  /* Reseteo interno para que no hereden el estilo circular de los iconos de la barra */
+  width: auto;
+  height: auto;
+  background: transparent;
+  border-radius: 0;
+  display: inline;
+}
+
+.menu-lateral a:hover {
+  color: rgb(0, 0, 0);
+  background: transparent;
+}
+
+/* Mostrar menú al hacer Hover */
+.menu-container:hover .menu-lateral {
+  display: flex;
+}
+
+/* ====== SECCIÓN REGISTRO Y FORMULARIO ====== */
+=======
 .contenedor-busqueda i {
   position: absolute;
   right: 200px;
@@ -121,6 +259,7 @@ nav a {
 }
 /*codigo*/
 
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 .registro {
   text-align: center;
   padding: 50px 20px;
@@ -135,10 +274,16 @@ nav a {
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
+.formulario {
+  background: #480000; 
+  width: 80%;          
+=======
 
 .formulario {
   background: #480000; 
   width: 80%;         
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
   max-width: 950px;    
   margin: 0 auto;      
   padding: 45px;
@@ -155,7 +300,10 @@ nav a {
   font-size: 18px;
 }
 
+<<<<<<< HEAD
+=======
 /* Inputs y Selects */
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 .formulario input, 
 .formulario select {
   width: 100%;
@@ -197,7 +345,10 @@ nav a {
   transform: translateY(-2px);
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 .formulario p {
   text-align: center;
   margin-top: 25px;
@@ -215,6 +366,10 @@ nav a {
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
+/* ====== RESPONSIVE ====== */
+=======
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 @media (max-width: 700px) {
   .formulario {
     width: 95%;
