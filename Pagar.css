@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-/* ====== ENCABEZADO Y RESET ====== */
-=======
 /* ====== ENCABEZADO ====== */
->>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 * {
   margin: 0;
   padding: 0;
@@ -12,46 +8,6 @@
 body {
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
-  background-color: #fcefdc;
-}
-
-header {
-  background-color: #8c1d0d;
-  padding: 0px 20px;
-  width: 100%;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  margin-left: 40px;
-}
-
-.logo img {
-  width: 90px;
-}
-
-/* ====== COMPORTAMIENTO DE ICONOS ====== */
-.nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-left: auto;
-  flex-shrink: 0;
-}
-
-/* Diseño de botones circulares blancos */
-.nav-icons > a,
-.menu-container .btn-menu {
-=======
   background-color: #fcefdc; 
 }
 header {
@@ -108,7 +64,6 @@ nav a {
   border-radius: 20px;
 }
 .nav-icons a{
->>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
   width: 45px;
   height: 45px;
   background: white;
@@ -120,40 +75,6 @@ nav a {
   text-decoration: none;
   transition: 0.3s;
   font-weight: bold;
-<<<<<<< HEAD
-  cursor: pointer;
-}
-
-/* Botón alargado especial de "Inicio" */
-.nav-icons > a:first-child {
-  width: auto;
-  padding: 0 18px;
-  border-radius: 20px;
-}
-
-/* Efectos Hover y Active */
-.nav-icons > a:hover,
-.menu-container .btn-menu:hover {
-  background: #000000;
-  color: #ffffff;
-}
-
-.nav-icons > a:active,
-.menu-container .btn-menu:active {
-  background: #931212;
-  color: #ffffff;
-}
-
-/* ====== BUSCADOR FLUIDO ====== */
-.contenedor-busqueda {
-  position: relative;
-  flex: 1; 
-  display: flex;
-  justify-content: center;
-  margin: 0 20px;
-}
-
-=======
 }
 .nav-icons a:hover{
     background:#000;
@@ -178,7 +99,6 @@ nav a {
   display: flex;
   justify-content: center;
 }
->>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 .search-box {
   width: 100%;
   max-width: 650px;
@@ -189,71 +109,6 @@ nav a {
   padding: 0 45px 0 15px;
   font-size: 16px;
 }
-<<<<<<< HEAD
-
-.contenedor-busqueda i {
-  position: absolute;
-  right: calc(50% - 325px + 20px);
-  top: 50%;
-  transform: translateY(-50%);
-  color: #000000;
-  pointer-events: none;
-}
-
-@media (max-width: 768px) {
-  .contenedor-busqueda i {
-    right: 20px;
-  }
-}
-
-/* ====== COMPORTAMIENTO DEL MENÚ DESPLEGABLE ====== */
-.menu-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.menu-lateral {
-  position: absolute;
-  top: 55px;
-  right: 0;
-  width: 260px;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  display: none;
-  flex-direction: column;
-  gap: 25px;
-  z-index: 9999;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-}
-
-.menu-lateral a {
-  color: #8c1d0d;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: serif;
-}
-
-.menu-lateral a:hover {
-  color: rgb(0, 0, 0);
-}
-
-/* Desplegar el menú cuando el mouse pasa sobre el contenedor */
-.menu-container:hover .menu-lateral {
-  display: flex;
-}
-
-/* ===== CUADRO PRINCIPAL DE PAGO ===== */
-.payment-container {
-  background-color: #fcefdc;
-  border: 1px solid #d6bfa5;
-  border-radius: 10px;
-  padding: 40px 50px;
-  max-width: 950px; 
-  margin: 40px auto;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-=======
 .contenedor-busqueda i {
   position: absolute;
   right: 200px;
@@ -278,7 +133,6 @@ nav a {
   margin: 0;
   border-radius: 0;
   box-shadow: none;
->>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 }
 
 .total-label {
@@ -295,8 +149,6 @@ nav a {
   margin-bottom: 20px;
 }
 
-<<<<<<< HEAD
-=======
 .tabs {
   display: flex;
   margin-bottom: 20px;
@@ -344,7 +196,6 @@ nav a {
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
->>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 /* ===== TABS DE MÉTODOS DE PAGO ===== */
 .tabs {
   display: flex;
@@ -381,23 +232,7 @@ nav a {
 .card-form {
   background-color: #fcefdc;
   border-radius: 10px;
-<<<<<<< HEAD
-}
-
-.card-logos-inline {
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end;
-  margin-bottom: 15px;
-}
-
-.card-logos-inline img {
-  height: 25px;
-  width: auto;
-  display: block;
-=======
   padding: 25px 30px;
->>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 }
 
 .card-form label {
@@ -452,7 +287,3 @@ nav a {
 .pay-btn:hover {
   background-color: #d4580b;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b

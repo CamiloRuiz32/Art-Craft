@@ -32,12 +32,12 @@ header {
 }
 
 .logo img {
- width: 90px;
+  width: 90px;
 }
 
-nav {
+/* ====== BOTONES E ICONOS DE LA BARRA ====== */
+.nav-icons {
   display: flex;
-  align-items: center;
   align-items: center;
   gap: 12px;
   margin-left: auto;
@@ -54,6 +54,7 @@ nav {
   border-radius: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   transition: 0.3s;
   font-weight: bold;
@@ -283,6 +284,7 @@ nav {
   word-wrap: break-word;
   line-height: 1.4;
 }
+
 .mision {
   width: 200px;
   border: 1px solid #ccc;
@@ -442,7 +444,7 @@ nav {
   font-size: 18px;
   text-decoration: none;
 }
-   
+
 .pie-pagina .grupo-2 {
   background-color: #6d1206;
   padding: 18px;
