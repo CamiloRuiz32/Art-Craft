@@ -8,44 +8,40 @@
   <link rel="stylesheet" href="MostrarProducto.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <!-- Logo con imagen -->
-      <div class="logo-container">
-        <img src="Imagenes/Logo2.png" alt="Logo Art Craft" class="logo-img">
-        <p class="logo-text">ART CRAFT</p>
-      </div>
+ <Header>
 
-      <nav>
-        <div class="search-container">
-          <input type="text" placeholder="Buscar producto...">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <a href="#">Inicio</a>
-        <a href="#"><i class="fa-solid fa-user"></i></a>
-        <a href="#"><i class="fa-solid fa-bell"></i></a>
-        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-      </nav>
-    </div>
+    <nav class="navbar">
+
+      <div class="logo">
+        <img src="/Imagenes/logo4.png" alt="Logo">
+      </div>
+      <div class="contenedor-busqueda">
+       <input class="search-box" type="text" placeholder="Buscar producto...">
+        <i class="fas fa-search"></i>
+      </div>
+     
+
+        <div class="nav-icons">
+          <a href="#">Inicio</a>
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="#"><i class="fa-solid fa-bell"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+         </div>
+
+    </nav>
   </header>
-  <!-- ====== PRODUCTO ====== -->
   <section class="producto-detalle">
     <div class="tarjeta-producto">
-
-      <!-- Flecha -->
       <div class="volver">
         <i class="fa-solid fa-arrow-left"></i>
       </div>
 
-      <!-- Parte superior -->
       <div class="seccion-superior">
-
-        <!-- Imagen -->
         <div class="imagen-producto">
           <img src="Imagenes/Mochilawayu.png.png" alt="Mochila Wayuu">
         </div>
 
-        <!-- Información -->
         <div class="info-producto">
           <h1>Mochila Wayuu</h1>
           <p>Tejidas con hilos que cuentan historias del agua y la naturaleza</p>
@@ -64,7 +60,6 @@
         </div>
       </div>
 
-      <!-- Opiniones -->
       <div class="opiniones">
         <h2>Opiniones de nuestros clientes</h2>
 
@@ -81,7 +76,6 @@
         </div>
       </div>
 
-      <!-- Caja comentario -->
       <div class="reseña-box">
         <textarea placeholder="Deja tu comentario:"></textarea>
 
@@ -97,7 +91,6 @@
           Enviar Reseña
         </button>
       </div>
-
     </div>
   </section>
 
@@ -120,7 +113,6 @@
       });
     }
   </script>
-
 </body>
 </html>
   
