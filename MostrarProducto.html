@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Craft - Pagar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="MostrarProducto.css">
+</head>
+<body>
+ <Header>
+
+    <nav class="navbar">
+
+      <div class="logo">
+        <img src="/Imagenes/logo4.png" alt="Logo">
+      </div>
+      <div class="contenedor-busqueda">
+       <input class="search-box" type="text" placeholder="Buscar producto...">
+        <i class="fas fa-search"></i>
+      </div>
+     
+
+        <div class="nav-icons">
+          <a href="#">Inicio</a>
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="#"><i class="fa-solid fa-bell"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+         </div>
+
+    </nav>
+  </header>
+  <section class="producto-detalle">
+    <div class="tarjeta-producto">
+      <div class="volver">
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+
+      <div class="seccion-superior">
+        <div class="imagen-producto">
+          <img src="Imagenes/Mochilawayu.png.png" alt="Mochila Wayuu">
+        </div>
+
+        <div class="info-producto">
+          <h1>Mochila Wayuu</h1>
+          <p>Tejidas con hilos que cuentan historias del agua y la naturaleza</p>
+
+          <div class="precio">$120.000</div>
+
+          <button class="btn btn-carrito" onclick="seleccionarBoton(this)">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Agregar al carrito
+          </button>
+
+          <button class="btn btn-comprar" onclick="seleccionarBoton(this)">
+            <i class="fa-solid fa-house"></i>
+            Comprar ahora
+          </button>
+        </div>
+      </div>
+
+      <div class="opiniones">
+        <h2>Opiniones de nuestros clientes</h2>
+
+        <div class="calificacion">4.8 ★★★★☆</div>
+
+        <div class="comentario">
+          <strong>Laura G</strong> ★★★★☆ <br>
+          Hermosa mochila, me encantó su material, todo perfecto.
+        </div>
+
+        <div class="comentario">
+          <strong>Manuel N</strong> ★★★☆☆ <br>
+          Hermosa mochila, me encantó su material, todo perfecto.
+        </div>
+      </div>
+
+      <div class="reseña-box">
+        <textarea placeholder="Deja tu comentario:"></textarea>
+
+        <div class="estrellas">
+          <span onclick="seleccionarEstrella(this)">★</span>
+          <span onclick="seleccionarEstrella(this)">★</span>
+          <span onclick="seleccionarEstrella(this)">★</span>
+          <span onclick="seleccionarEstrella(this)">★</span>
+          <span onclick="seleccionarEstrella(this)">★</span>
+        </div>
+
+        <button class="btn-enviar" onclick="seleccionarBoton(this)">
+          Enviar Reseña
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function seleccionarBoton(boton) {
+      document.querySelectorAll('.btn, .btn-enviar').forEach(btn => {
+        btn.classList.remove('activo');
+      });
+      boton.classList.add('activo');
+    }
+
+    function seleccionarEstrella(estrella) {
+      let estrellas = estrella.parentElement.querySelectorAll('span');
+      estrellas.forEach((s, index) => {
+        if (index <= [...estrellas].indexOf(estrella)) {
+          s.classList.add('seleccionada');
+        } else {
+          s.classList.remove('seleccionada');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
+  

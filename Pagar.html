@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Craft - Pagar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="Pagar.css">
+</head>
+<body> <header>
+    <nav class="navbar">
+
+      <div class="logo">
+        <img src="/Imagenes/logo4.png" alt="Logo">
+      </div>
+
+      <div class="contenedor-busqueda">
+        <input class="search-box" type="text" placeholder="Buscar producto...">
+        <i class="fas fa-search"></i>
+      </div>
+
+      <div class="nav-icons">
+          <a href="#">Inicio</a>
+
+          <a href="PerfilArtesano.html">
+              <i class="fa-solid fa-user"></i>
+          </a>
+
+          <a href="#">
+              <i class="fa-solid fa-bell"></i>
+          </a>
+
+          <a href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+
+          <div class="menu-container">
+              <a href="#" class="btn-menu">
+                  <i class="fa-solid fa-bars"></i>
+              </a>
+
+              <div class="menu-lateral">
+                  <a href="Subirproducto.html">Subir producto</a>
+                  <a href="PerfilArtesano.html">Perfil del artesano</a>
+                  <a href="bloghistoria.html">Blog/Historias</a>
+                  <a href="Contacto.html">Contacto y soporte</a>
+                  <a href="SobreNosotros.html">Nosotros</a>
+                  <a href="Categorias.html">Categoría</a>
+              </div>
+          </div>
+      </div>
+
+    </nav>
+</header>
+
+<main class="payment-container">
+    <p class="total-label">Total a pagar:</p>
+    <p class="price">$</p>
+
+    <div class="tabs">
+      <button class="tab active">Tarjeta de crédito/débito</button>
+      <button class="tab">Transferencia Bancaria</button>
+      <button class="tab">Pago Contraentrega</button>
+    </div>
+
+    <form class="card-form">
+      <div class="card-logos-inline">
+        <img src="Imagenes/Visa.png" alt="Visa">
+        <img src="Imagenes/Mastercard.png" alt="Mastercard">
+        <img src="Imagenes/America express.png" alt="Amex">
+      </div>
+
+      <label>Nombre de la Tarjeta</label>
+      <input type="text" class="input-field" placeholder="Nombre completo">
+
+      <label>Número de la tarjeta</label>
+      <input type="text" class="input-field" placeholder="1234 456 45678">
+
+      <label>Vencimiento</label>
+      <div class="expiry">
+        <input type="text" class="input-field" placeholder="MM">
+        <input type="text" class="input-field" placeholder="AA">
+        <input type="text" class="input-field" placeholder="CVV">
+      </div>
+
+      <button type="submit" class="pay-btn">Pagar $</button>
+    </form>
+</main>
+
+</body>
+</html>
+
+
+
