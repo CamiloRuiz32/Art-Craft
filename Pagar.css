@@ -1,4 +1,4 @@
-/* ====== ENCABEZADO ====== */
+/* ====== ENCABEZADO Y RESET ====== */
 * {
   margin: 0;
   padding: 0;
@@ -8,62 +8,44 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #fcefdc; 
-}
-header {
-  background-color: #8c1d0d;;
-  padding: 0px 20px;
-  
-}
-.logo {
-  display: flex;
-  align-items: center;   /* alinea verticalmente logo y texto */
-  flex-shrink: 0;
-  margin-left: 40px;  
-}
-.logo img {
- width: 90px;
+  background-color: #fcefdc;
 }
 
-/* ====== MENÚ DE NAVEGACIÓN ====== */
-nav {
+header {
+  background-color: #8c1d0d;
+  padding: 0px 20px;
+  width: 100%;
+}
+
+.navbar {
   display: flex;
   align-items: center;
-  gap: 15px;
+  justify-content: space-between;
 }
 
-nav a {
-  color: #8b2510;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin-left: 40px;
 }
-.nav-icons{
-  display:flex;
-  align-items:center;
-  gap:12px;
+
+.logo img {
+  width: 90px;
+}
+
+/* ====== COMPORTAMIENTO DE ICONOS ====== */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-left: auto;
+  flex-shrink: 0;
 }
 
-/* Hover */
-.nav-icons a:hover{
-  background:#983737;
-  color:#fff;
-}
-
-/* Click */
-.nav-icons a:active{
-  background:#931212;
-  color:#8c2929;
-}
-
-/* Para que "Inicio" se vea más ancho */
-.nav-icons a:first-child{
-   width: auto;
-  padding: 0 18px;
-  border-radius: 20px;
-}
-.nav-icons a{
+/* Diseño de botones circulares blancos */
+.nav-icons > a,
+.menu-container .btn-menu {
   width: 45px;
   height: 45px;
   background: white;
@@ -75,30 +57,38 @@ nav a {
   text-decoration: none;
   transition: 0.3s;
   font-weight: bold;
-}
-.nav-icons a:hover{
-    background:#000;
-    color:#fff;
-}
-.navbar{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  cursor: pointer;
 }
 
-/* Click (solo mientras presionas) */
-.nav-icons a:active{
-    background:#000;
-    color:#fff;
+/* Botón alargado especial de "Inicio" */
+.nav-icons > a:first-child {
+  width: auto;
+  padding: 0 18px;
+  border-radius: 20px;
 }
 
-/* ====== CUADRO DE BÚSQUEDA ====== */
+/* Efectos Hover y Active */
+.nav-icons > a:hover,
+.menu-container .btn-menu:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.nav-icons > a:active,
+.menu-container .btn-menu:active {
+  background: #931212;
+  color: #ffffff;
+}
+
+/* ====== BUSCADOR FLUIDO ====== */
 .contenedor-busqueda {
   position: relative;
-  flex: 1px;
+  flex: 1; 
   display: flex;
   justify-content: center;
+  margin: 0 20px;
 }
+
 .search-box {
   width: 100%;
   max-width: 650px;
@@ -109,30 +99,69 @@ nav a {
   padding: 0 45px 0 15px;
   font-size: 16px;
 }
+
 .contenedor-busqueda i {
   position: absolute;
-  right: 200px;
+  right: calc(50% - 325px + 20px);
   top: 50%;
   transform: translateY(-50%);
-  color: #c80707;
+  color: #000000;
+  pointer-events: none;
 }
 
-/* codigo */
-.page-title-container {
-  background-color: #8b2510;
-  padding: 10px 40px 30px 40px;
+@media (max-width: 768px) {
+  .contenedor-busqueda i {
+    right: 20px;
+  }
 }
 
-.page-title {
-  color: white;
-  font-size: 30px;
+/* ====== COMPORTAMIENTO DEL MENÚ DESPLEGABLE ====== */
+.menu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
+.menu-lateral {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 260px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 9999;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.menu-lateral a {
+  color: #8c1d0d;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: serif;
+}
+
+.menu-lateral a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* Desplegar el menú cuando el mouse pasa sobre el contenedor */
+.menu-container:hover .menu-lateral {
+  display: flex;
+}
+
+/* ===== CUADRO PRINCIPAL DE PAGO ===== */
 .payment-container {
-  width: 100%;
-  margin: 0;
-  border-radius: 0;
-  box-shadow: none;
+  background-color: #fcefdc;
+  border: 1px solid #d6bfa5;
+  border-radius: 10px;
+  padding: 40px 50px;
+  max-width: 950px; 
+  margin: 40px auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
 .total-label {
@@ -147,53 +176,6 @@ nav a {
   text-align: center;
   color: #5a1807;
   margin-bottom: 20px;
-}
-
-.tabs {
-  display: flex;
-  margin-bottom: 20px;
-  border: 1px solid #c5bba3;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.tab {
-  flex: 1;
-  padding: 12px 5px;
-  border: none;
-  background: #eeeecb;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: bold;
-  border-right: 1px solid #c5bba3;
-}
-
-.tab.active {
-  background: #8b2510;
-  color: white;
-}
-
-.card-logos-inline {
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end;
-  margin-bottom: 10px;
-}
-
-.card-logos-inline img {
-  height: 25px;
-  width: auto;
-  display: block;
-}
-/* ===== CUADRO PRINCIPAL DE PAGO ===== */
-.payment-container {
-  background-color: #fcefdc;
-  border: 1px solid #d6bfa5;
-  border-radius: 10px;
-  padding: 40px 50px;
-  max-width: 950px; /* más ancho */
-  margin: 40px auto;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
 /* ===== TABS DE MÉTODOS DE PAGO ===== */
@@ -232,7 +214,19 @@ nav a {
 .card-form {
   background-color: #fcefdc;
   border-radius: 10px;
-  padding: 25px 30px;
+}
+
+.card-logos-inline {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.card-logos-inline img {
+  height: 25px;
+  width: auto;
+  display: block;
 }
 
 .card-form label {
