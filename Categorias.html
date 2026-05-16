@@ -3,26 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Categoria Art Craft</title>
+  <title>Pagina de Categorias</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="SobreNosotros.css">
+  <link rel="stylesheet" href="categoria.css">
 </head>
 <body>
   <Header>
-    <div class="container">
-      <p class="logo">ART CRAFT</p>
-      <nav>
+
+    <nav class="navbar">
+
+      <div class="logo">
+        <img src="/Imagenes/Logo.png" alt="Logo">
+      </div>
+      <div class="contenedor-busqueda">
+       <input class="search-box" type="text" placeholder="Buscar producto...">
+        <i class="fas fa-search"></i>
+      </div>
+     
+
+        <div class="nav-icons">
           <a href="#">Inicio</a>
           <a href="#"><i class="fa-solid fa-user"></i></a>
           <a href="#"><i class="fa-solid fa-bell"></i></a>
           <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           <a href="#"><i class="fa-solid fa-bars"></i></a>
-      </nav>
+         </div>
+
+    </nav>
+  </header>
+  <!-- Sección de categorías -->
+  <section class="categorias">
+    <h2>Categorías</h2>
+    <div class="tabs">
+      <button class="active">Mochilas</button>
+      <button>Bisutería</button>
+      <button>Cerámica</button>
+      <button>Máscaras</button>
     </div>
-  </Header>
+
+    <!-- Productos de mochilas -->
+    <div class="productos">
+      <div class="producto">
+        <img src="/Imagenes/mochila artesanal 1.png" alt="Mochila artesanal">
+        <button>Mostrar</button>
+      </div>
+      <div class="producto">
+        <img src="/Imagenes/mochila artesanal 2.png" alt="Mochila artesanal">
+        <button>Mostrar</button>
+      </div>
+       <div class="producto">
+        <img src="imagenes/mochila artesanal 3.png" alt="Mochila artesanal">
+        <button>Mostrar</button>
+      </div>
+      <div class="producto">
+        <img src="imagenes/mochila artesanal 4.png" alt="Mochila artesanal">
+        <button>Mostrar</button>
+      </div>
+      <div class="producto">
+        <img src="imagenes/mochila artesanal 5.png" alt="Mochila artesanal">
+        <button>Mostrar</button>
+      </div>
+      <div class="producto">
+        <img src="/Imagenes/mochila artesanal 6.png" alt="Mochila artesanal">
+        <button>Mostrar</button>
+      </div>
+    </div>
+  </section>
+  
   <footer>
     <div class="container">
+<<<<<<< HEAD
       <p>Art Craft 2026</p>
+=======
+      <p>&copy;Art Craft 2026 Todos los derechos reservados </p>
+>>>>>>> bbb0576bc6465a3b4ee9bbf9dfb6b3790208d750
     </div>
   </footer>
 </body>
