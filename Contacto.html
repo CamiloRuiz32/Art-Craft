@@ -1,78 +1,69 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Art Craft - Pagar</title>
+  <title>Art Craft - Contacto</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="Contacto.css">
 </head>
 <body>
   <header>
-    <div class="container">
-      <!-- Logo con imagen -->
-      <div class="logo-container">
-        <img src="Imagenes/Logo2.png" alt="Logo Art Craft" class="logo-img">
-        <p class="logo-text">ART CRAFT</p>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/Imagenes/logo4.png" alt="Logo">
       </div>
 
-      <nav>
-        <div class="search-container">
-          <input type="text" placeholder="Buscar producto...">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+      <div class="contenedor-busqueda">
+        <input class="search-box" type="text" placeholder="Buscar producto...">
+        <i class="fas fa-search"></i>
+      </div>
+
+      <div class="nav-icons">
         <a href="#">Inicio</a>
         <a href="#"><i class="fa-solid fa-user"></i></a>
         <a href="#"><i class="fa-solid fa-bell"></i></a>
         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-      </nav>
-    </div>
+        <a href="#"><i class="fa-solid fa-bars"></i></a>
+      </div>
+    </nav>
   </header>
-    
-    <div class="contenido">
 
-      <h1>Contacto y soporte</h1>
-      <p class="subtitulo">¡Estamos aquí para ayudarte!</p>
+  <main class="contenido">
+    <h1>Contacto y soporte</h1>
+    <p class="subtitulo">¡Estamos aquí para ayudarte!</p>
 
-      <div class="cajas">
-
-        <div class="formulario">
-
-          <p>Nombre o Empresa</p>
-          <div class="input-box">
-            <i class="fa-regular fa-user"></i>
-            <input type="text" placeholder="Ingresa tu entidad">
-          </div>
-
-          <p>Correo Electrónico</p>
-          <div class="input-box">
-            <i class="fa-solid fa-envelope"></i>
-            <input type="email" placeholder="Ingresa tu correo">
-          </div>
-
-          <p>Mensaje</p>
-          <textarea placeholder="Escribe tu mensaje..."></textarea>
-
-          <button>ENVIAR MENSAJE</button>
-
+    <div class="cajas">
+      <div class="formulario">
+        <p>Nombre o Empresa</p>
+        <div class="input-box">
+          <i class="fa-regular fa-user"></i>
+          <input type="text" placeholder="Ingresa tu entidad">
         </div>
 
-        <div class="ayuda">
-          <div class="titulo-ayuda">¿Necesitas ayuda?</div>
-          <div class="info-ayuda">
-            <p><i class="fa-solid fa-phone"></i> +57 325 567 8790</p>
-            <p><i class="fa-solid fa-envelope"></i> contacto@gmail.com</p>
-            <p><i class="fa-regular fa-clock"></i> Lunes - Viernes 8am - 6pm</p>
-          </div>
+        <p>Correo Electrónico</p>
+        <div class="input-box">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" placeholder="Ingresa tu correo">
         </div>
 
+        <p>Mensaje</p>
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+
+        <button>ENVIAR MENSAJE</button>
       </div>
 
+      <aside class="ayuda">
+        <div class="titulo-ayuda">¿Necesitas ayuda?</div>
+        <div class="info-ayuda">
+          <p><i class="fa-solid fa-phone"></i> +57 325 567 8790</p>
+          <p><i class="fa-solid fa-envelope"></i> contacto@gmail.com</p>
+          <p><i class="fa-regular fa-clock"></i> Lunes - Viernes 8am - 6pm</p>
+        </div>
+      </aside>
     </div>
-    
-    <div class="footer"></div>
+  </main>
 
-  </div>
-
+  <div class="footer"></div>
 </body>
 </html>
