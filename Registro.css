@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* ====== ENCABEZADO Y RESET ====== */
+=======
+/* ====== ENCABEZADO ====== */
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +12,7 @@
 body {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   height: 100%;
   width: 100%;
   background-color: #731A04; 
@@ -26,12 +31,26 @@ header {
   justify-content: space-between;
 }
 
+=======
+   height: 100%;
+  width: 100%;
+  background-color: #731A04; 
+  overflow-x: hidden;
+
+}
+header {
+  background-color: #8c1d0d;;
+  padding: 0px 20px;
+  
+}
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 .logo {
   display: flex;
   align-items: center;   
   flex-shrink: 0;
   margin-left: 40px;  
 }
+<<<<<<< HEAD
 
 .logo img {
   width: 90px;
@@ -49,6 +68,51 @@ header {
 /* Diseño unificado para botones circulares blancos */
 .nav-icons > a,
 .menu-container .btn-menu {
+=======
+.logo img {
+ width: 90px;
+}
+
+/* ====== MENÚ DE NAVEGACIÓN ====== */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav a {
+  color: #8b2510;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.nav-icons{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-left: auto;
+}
+
+/* Hover */
+.nav-icons a:hover{
+  background:#983737;
+  color:#fff;
+}
+
+/* Click */
+.nav-icons a:active{
+  background:#931212;
+  color:#8c2929;
+}
+
+
+.nav-icons a:first-child{
+   width: auto;
+  padding: 0 18px;
+  border-radius: 20px;
+}
+.nav-icons a{
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
   width: 45px;
   height: 45px;
   background: white;
@@ -60,6 +124,7 @@ header {
   text-decoration: none;
   transition: 0.3s;
   font-weight: bold;
+<<<<<<< HEAD
   cursor: pointer;
 }
 
@@ -92,6 +157,31 @@ header {
   margin: 0 20px;
 }
 
+=======
+}
+.nav-icons a:hover{
+    background:#000;
+    color:#fff;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-icons a:active{
+    background:#000;
+    color:#fff;
+}
+
+
+.contenedor-busqueda {
+  position: relative;
+  flex: 1px;
+  display: flex;
+  justify-content: center;
+}
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 .search-box {
   width: 100%;
   max-width: 650px;
@@ -102,6 +192,7 @@ header {
   padding: 0 45px 0 15px;
   font-size: 16px;
 }
+<<<<<<< HEAD
 
 .contenedor-busqueda i {
   position: absolute;
@@ -158,6 +249,17 @@ header {
 }
 
 /* ====== SECCIÓN REGISTRO Y FORMULARIO ====== */
+=======
+.contenedor-busqueda i {
+  position: absolute;
+  right: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+ color: rgb(188, 30, 30);
+}
+/*codigo*/
+
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 .registro {
   text-align: center;
   padding: 50px 20px;
@@ -172,9 +274,16 @@ header {
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 .formulario {
   background: #480000; 
   width: 80%;          
+=======
+
+.formulario {
+  background: #480000; 
+  width: 80%;         
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
   max-width: 950px;    
   margin: 0 auto;      
   padding: 45px;
@@ -191,6 +300,10 @@ header {
   font-size: 18px;
 }
 
+<<<<<<< HEAD
+=======
+/* Inputs y Selects */
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 .formulario input, 
 .formulario select {
   width: 100%;
@@ -232,6 +345,10 @@ header {
   transform: translateY(-2px);
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 .formulario p {
   text-align: center;
   margin-top: 25px;
@@ -249,7 +366,10 @@ header {
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
 /* ====== RESPONSIVE ====== */
+=======
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 @media (max-width: 700px) {
   .formulario {
     width: 95%;

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* ====== ENCABEZADO Y RESET ====== */
+=======
+/* ====== ENCABEZADO ====== */
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +12,7 @@
 body {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   background-color: #fcefdc;
 }
 
@@ -46,6 +51,64 @@ header {
 /* Diseño de botones circulares blancos */
 .nav-icons > a,
 .menu-container .btn-menu {
+=======
+  background-color: #fcefdc; 
+}
+header {
+  background-color: #8c1d0d;;
+  padding: 0px 20px;
+  
+}
+.logo {
+  display: flex;
+  align-items: center;   /* alinea verticalmente logo y texto */
+  flex-shrink: 0;
+  margin-left: 40px;  
+}
+.logo img {
+ width: 90px;
+}
+
+/* ====== MENÚ DE NAVEGACIÓN ====== */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav a {
+  color: #8b2510;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.nav-icons{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-left: auto;
+}
+
+/* Hover */
+.nav-icons a:hover{
+  background:#983737;
+  color:#fff;
+}
+
+/* Click */
+.nav-icons a:active{
+  background:#931212;
+  color:#8c2929;
+}
+
+/* Para que "Inicio" se vea más ancho */
+.nav-icons a:first-child{
+   width: auto;
+  padding: 0 18px;
+  border-radius: 20px;
+}
+.nav-icons a{
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
   width: 45px;
   height: 45px;
   background: white;
@@ -57,6 +120,7 @@ header {
   text-decoration: none;
   transition: 0.3s;
   font-weight: bold;
+<<<<<<< HEAD
   cursor: pointer;
 }
 
@@ -89,6 +153,32 @@ header {
   margin: 0 20px;
 }
 
+=======
+}
+.nav-icons a:hover{
+    background:#000;
+    color:#fff;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Click (solo mientras presionas) */
+.nav-icons a:active{
+    background:#000;
+    color:#fff;
+}
+
+/* ====== CUADRO DE BÚSQUEDA ====== */
+.contenedor-busqueda {
+  position: relative;
+  flex: 1px;
+  display: flex;
+  justify-content: center;
+}
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 .search-box {
   width: 100%;
   max-width: 650px;
@@ -99,6 +189,7 @@ header {
   padding: 0 45px 0 15px;
   font-size: 16px;
 }
+<<<<<<< HEAD
 
 .contenedor-busqueda i {
   position: absolute;
@@ -162,6 +253,32 @@ header {
   max-width: 950px; 
   margin: 40px auto;
   box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+=======
+.contenedor-busqueda i {
+  position: absolute;
+  right: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #c80707;
+}
+
+/* codigo */
+.page-title-container {
+  background-color: #8b2510;
+  padding: 10px 40px 30px 40px;
+}
+
+.page-title {
+  color: white;
+  font-size: 30px;
+}
+
+.payment-container {
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 }
 
 .total-label {
@@ -178,6 +295,56 @@ header {
   margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
+=======
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #c5bba3;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px 5px;
+  border: none;
+  background: #eeeecb;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  border-right: 1px solid #c5bba3;
+}
+
+.tab.active {
+  background: #8b2510;
+  color: white;
+}
+
+.card-logos-inline {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.card-logos-inline img {
+  height: 25px;
+  width: auto;
+  display: block;
+}
+/* ===== CUADRO PRINCIPAL DE PAGO ===== */
+.payment-container {
+  background-color: #fcefdc;
+  border: 1px solid #d6bfa5;
+  border-radius: 10px;
+  padding: 40px 50px;
+  max-width: 950px; /* más ancho */
+  margin: 40px auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 /* ===== TABS DE MÉTODOS DE PAGO ===== */
 .tabs {
   display: flex;
@@ -214,6 +381,7 @@ header {
 .card-form {
   background-color: #fcefdc;
   border-radius: 10px;
+<<<<<<< HEAD
 }
 
 .card-logos-inline {
@@ -227,6 +395,9 @@ header {
   height: 25px;
   width: auto;
   display: block;
+=======
+  padding: 25px 30px;
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
 }
 
 .card-form label {
@@ -281,4 +452,7 @@ header {
 .pay-btn:hover {
   background-color: #d4580b;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9a7e3d454e077ddac2f51c7e23a4918036c8df5b
