@@ -1,0 +1,208 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: #fdf2d9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #8b2510;
+  padding: 5px 40px;
+  border-radius: 10px 10px 0 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo con imagen + texto */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-img {
+  height: 120px;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 42px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+/* Navegación */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container input {
+  width: 220px;
+  padding: 10px 35px 10px 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+.search-container i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #8b2510;
+  cursor: pointer;
+}
+
+nav a {
+  background-color: white;
+  color: #8b2510;
+  border-radius: 25px;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a:active,
+nav i:hover,
+nav i:active {
+  background-color: #000;
+  color: white;
+}
+
+nav i {
+  font-size: 18px;
+}
+
+/* Título de la página */
+.page-title-container {
+  background-color: #8b2510;
+  padding: 10px 40px 30px 40px;
+}
+
+.page-title {
+  color: white;
+  font-size: 30px;
+}
+
+/* Contenedor de pago */
+.payment-container {
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.total-label {
+  font-size: 18px;
+  text-align: center;
+  color: #5a1807;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: #5a1807;
+  margin-bottom: 20px;
+}
+
+/* Tabs de métodos de pago */
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #c5bba3;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px 5px;
+  border: none;
+  background: #eeeecb;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  border-right: 1px solid #c5bba3;
+}
+
+.tab.active {
+  background: #8b2510;
+  color: white;
+}
+
+/* Logos de tarjetas */
+.card-logos-inline {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.card-logos-inline img {
+  height: 25px;
+  width: auto;
+  display: block;
+}
+
+/* Formulario */
+.card-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: white;
+}
+
+.expiry {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botón de pagar */
+.pay-btn {
+  width: 100%;
+  padding: 15px;
+  background: #f2650d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.pay-btn:hover {
+  background: #d4580b;
+}
+
+
+
