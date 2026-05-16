@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,12 +40,42 @@ header {
   color: #000;
 }
 
+=======
+/* ====== ENCABEZADO ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #8c1d0d;;
+  padding: 0px 20px;
+  
+}
+.logo {
+  display: flex;
+  align-items: center;   /* alinea verticalmente logo y texto */
+  flex-shrink: 0;
+  margin-left: 40px;  
+}
+.logo img {
+ width: 90px;
+}
+
+/* ====== MENÚ DE NAVEGACIÓN ====== */
+>>>>>>> 51ec446 (subir imagen)
 nav {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
+<<<<<<< HEAD
 .search-container {
   position: relative;
 }
@@ -79,6 +110,91 @@ nav a {
 nav a:hover {
   background-color: #000;
   color: white;
+=======
+nav a {
+  color: #8b2510;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.nav-icons{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-left: auto;
+}
+
+/* Hover */
+.nav-icons a:hover{
+  background:#983737;
+  color:#fff;
+}
+
+/* Click */
+.nav-icons a:active{
+  background:#931212;
+  color:#8c2929;
+}
+
+/* Para que "Inicio" se vea más ancho */
+.nav-icons a:first-child{
+   width: auto;
+  padding: 0 18px;
+  border-radius: 20px;
+}
+.nav-icons a{
+  width: 45px;
+  height: 45px;
+  background: rgb(7, 7, 7);
+  color: rgb(188, 30, 30);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.nav-icons a:hover{
+    background:#000;
+    color:#fff;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Click (solo mientras presionas) */
+.nav-icons a:active{
+    background:#000;
+    color:#fff;
+}
+
+/* ====== CUADRO DE BÚSQUEDA ====== */
+.contenedor-busqueda {
+  position: relative;
+  flex: 1px;
+  display: flex;
+  justify-content: center;
+}
+.search-box {
+  width: 100%;
+  max-width: 650px;
+  height: 45px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  padding: 0 45px 0 15px;
+  font-size: 16px;
+}
+.contenedor-busqueda i {
+  position: absolute;
+  right: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000000;
+>>>>>>> 51ec446 (subir imagen)
 }
 .artisan-banner {
     position: relative;
@@ -113,12 +229,20 @@ nav a:hover {
 
 /* CONTENIDO PRINCIPAL */
 .info-container {
+<<<<<<< HEAD
     max-width: 1000px;
     margin: -40px auto 40px; /* Sube para solapar el banner */
     background: #fdf2d9;
     padding: 20px;
     position: relative;
     border-left: 10px solid #8b2510; /* Borde rojo lateral */
+=======
+    max-width: 1400px;
+    margin: -40px auto 40px; /* Sube para solapar el banner */
+    background: #FBE9D0;
+    padding: 20px;
+    position: relative;
+>>>>>>> 51ec446 (subir imagen)
 }
 
 h3 {
@@ -157,4 +281,8 @@ h3 {
 
 .creations-grid img:hover {
     border-color: #8b2510;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 51ec446 (subir imagen)
