@@ -1,4 +1,4 @@
-/* ====== ENCABEZADO ====== */
+/* /* ====== RESET Y ESTILOS GLOBALES ====== */
 * {
   margin: 0;
   padding: 0;
@@ -8,57 +8,47 @@
 body {
   margin: 0;
   padding: 0;
-  background: #ded2b7;
-  color: #1f160f;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FBE9D0;
 }
 
+/* ====== ENCABEZADO Y BARRA DE NAVEGACIÓN ====== */
 header {
   background-color: #8c1d0d;
-  padding: 8px 20px;
+  padding: 0px 20px;
+  width: 100%;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
 }
 
 .logo {
   display: flex;
-  align-items: center;
+  align-items: center;   
   flex-shrink: 0;
+  margin-left: 40px;  
 }
 
 .logo img {
-  width: 72px;
+  width: 90px;
 }
 
-/* ====== MENÚ DE NAVEGACIÓN ====== */
-nav {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-nav a {
-  color: #8b2510;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
+/* ====== BOTONES E ICONOS DE LA BARRA ====== */
 .nav-icons {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   margin-left: auto;
+  flex-shrink: 0;
 }
 
-.nav-icons a {
-  width: 40px;
-  height: 40px;
+/* Diseño de esferas blancas unificadas */
+.nav-icons > a,
+.menu-container .btn-menu {
+  width: 45px;
+  height: 45px;
   background: white;
   color: rgb(188, 30, 30);
   border-radius: 50%;
@@ -67,49 +57,107 @@ nav a {
   justify-content: center;
   text-decoration: none;
   transition: 0.3s;
-  font-size: 15px;
   font-weight: bold;
+  cursor: pointer;
 }
 
-.nav-icons a:first-child {
+/* Botón adaptativo para "Inicio" */
+.nav-icons > a:first-child {
   width: auto;
-  padding: 0 16px;
+  padding: 0 18px;
   border-radius: 20px;
 }
 
-.nav-icons a:hover,
-.nav-icons a:active {
-  background: #000;
-  color: #fff;
+/* Estados de interacción */
+.nav-icons > a:hover,
+.menu-container .btn-menu:hover {
+  background: #000000;
+  color: #ffffff;
 }
 
-/* ====== CUADRO DE BÚSQUEDA ====== */
+.nav-icons > a:active,
+.menu-container .btn-menu:active {
+  background: #931212;
+  color: #ffffff;
+}
+
+/* ====== BUSCADOR DINÁMICO ====== */
 .contenedor-busqueda {
   position: relative;
   flex: 1;
   display: flex;
   justify-content: center;
+  margin: 0 20px;
 }
 
 .search-box {
   width: 100%;
-  max-width: 560px;
-  height: 40px;
+  max-width: 650px;
+  height: 45px;
   border: none;
-  border-radius: 12px;
+  border-radius: 15px;
   outline: none;
-  padding: 0 42px 0 15px;
-  font-size: 15px;
+  padding: 0 45px 0 15px;
+  font-size: 16px;
 }
 
 .contenedor-busqueda i {
   position: absolute;
-  right: calc(50% - 260px);
+  right: calc(50% - 325px + 20px);
   top: 50%;
   transform: translateY(-50%);
   color: #000000;
+  pointer-events: none;
 }
 
+@media (max-width: 768px) {
+  .contenedor-busqueda i {
+    right: 20px;
+  }
+}
+
+/* ====== COMPORTAMIENTO MENÚ LATERAL ====== */
+.menu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.menu-lateral {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 260px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 9999;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.menu-lateral a {
+  color: #8c1d0d;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: serif;
+  width: auto;
+  height: auto;
+  background: transparent;
+  border-radius: 0;
+  display: inline;
+}
+
+.menu-lateral a:hover {
+  color: rgb(0, 0, 0);
+  background: transparent;
+}
+
+.menu-container:hover .menu-lateral {
+  display: flex;
+}
 /* ====== CONTENIDO ====== */
 .contenido {
   width: min(1180px, calc(100% - 48px));
@@ -117,7 +165,6 @@ nav a {
   padding: 34px 0 0;
 }
 
-/* ===== TITULOS ===== */
 .contenido h1 {
   margin-bottom: 8px;
   color: #8f2a11;
@@ -263,6 +310,7 @@ button:hover {
   margin-top: 56px;
 }
 
+/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   header {
     height: auto;
