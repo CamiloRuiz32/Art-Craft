@@ -1,4 +1,4 @@
-/* /* ====== RESET Y ESTILOS GLOBALES ====== */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,6 @@ body {
   background-color: #FBE9D0;
 }
 
-/* ====== ENCABEZADO Y BARRA DE NAVEGACIÓN ====== */
 header {
   background-color: #8c1d0d;
   padding: 0px 20px;
@@ -35,7 +34,6 @@ header {
   width: 90px;
 }
 
-/* ====== BOTONES E ICONOS DE LA BARRA ====== */
 .nav-icons {
   display: flex;
   align-items: center;
@@ -44,7 +42,7 @@ header {
   flex-shrink: 0;
 }
 
-/* Diseño de esferas blancas unificadas */
+
 .nav-icons > a,
 .menu-container .btn-menu {
   width: 45px;
@@ -61,14 +59,13 @@ header {
   cursor: pointer;
 }
 
-/* Botón adaptativo para "Inicio" */
 .nav-icons > a:first-child {
   width: auto;
   padding: 0 18px;
   border-radius: 20px;
 }
 
-/* Estados de interacción */
+
 .nav-icons > a:hover,
 .menu-container .btn-menu:hover {
   background: #000000;
@@ -81,7 +78,7 @@ header {
   color: #ffffff;
 }
 
-/* ====== BUSCADOR DINÁMICO ====== */
+
 .contenedor-busqueda {
   position: relative;
   flex: 1;
@@ -116,7 +113,7 @@ header {
   }
 }
 
-/* ====== COMPORTAMIENTO MENÚ LATERAL ====== */
+
 .menu-container {
   position: relative;
   display: flex;
@@ -158,9 +155,7 @@ header {
 .menu-container:hover .menu-lateral {
   display: flex;
 }
-/* ================= TITULO ================= */
 
-/* ================= TITULO ================= */
 .titulo {
   width: 100%;
   background: #efe1cb;
@@ -183,7 +178,6 @@ header {
   margin-top: 8px;
 }
 
-/* ================= CONTENIDO ================= */
 .contenido {
   display: flex;
   gap: 24px;
@@ -194,7 +188,7 @@ header {
   padding: 22px;
 }
 
-/* FORMULARIO */
+
 .formulario {
   flex: 1;
   padding: 12px;
@@ -224,7 +218,7 @@ header {
   resize: none;
 }
 
-/* BOTON SUBIR */
+
 .subir {
   display: inline-block;
   margin-top: 18px;
@@ -238,7 +232,7 @@ header {
   font-size: 17px;
 }
 
-/* BOTON PUBLICAR */
+
 .publicar {
   display: block;
   width: 240px;
@@ -253,7 +247,6 @@ header {
   cursor: pointer;
 }
 
-/* ================= PREVIEW ================= */
 .preview {
   width: 330px;
   background: #981d00;
@@ -297,7 +290,7 @@ header {
 
 
 
-/* ====== RESPONSIVE ====== */
+
 @media (max-width: 700px) {
   .formulario {
     width: 95%;
@@ -418,7 +411,6 @@ header {
     font-size: 16px;
 }
 
-/* RESPONSIVE */
 @media screen and (max-width:900px){
 
     .pie-pagina .grupo-1{
