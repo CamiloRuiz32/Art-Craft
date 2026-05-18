@@ -52,10 +52,10 @@ nav a {
   align-items: center;
   gap: 12px;
   margin-left: auto;
-  flex-shrink: 0; /* Evita que los botones colapsen en pantallas pequeñas */
+  flex-shrink: 0;
 }
 
-/* Diseño circular para botones estándar y botón de menú */
+/* ===== BOTONES ===== */
 .nav-icons > a,
 .menu-container .btn-menu {
   width: 45px;
@@ -72,14 +72,14 @@ nav a {
   cursor: pointer;
 }
 
-/* Estilo elástico único para el botón de "Inicio" */
+/* Botón Inicio */
 .nav-icons > a:first-child {
   width: auto;
   padding: 0 18px;
   border-radius: 20px;
 }
 
-/* Estados Hover y Active Unificados */
+/* Hover */
 .nav-icons > a:hover,
 .menu-container .btn-menu:hover {
   background: #000000;
@@ -95,7 +95,7 @@ nav a {
 /* ====== BUSCADOR ====== */
 .contenedor-busqueda {
   position: relative;
-  flex: 1; /* Permite que el buscador tome el espacio central de forma fluida */
+  flex: 1;
   display: flex;
   justify-content: center;
   margin: 0 20px;
@@ -121,49 +121,10 @@ nav a {
   pointer-events: none;
 }
 
-/* Ajuste responsivo del icono lupa si la pantalla se reduce */
 @media (max-width: 768px) {
   .contenedor-busqueda i {
     right: 20px;
   }
-}
-
-/* ====== MENÚ DESPLEGABLE LATERIAL ====== */
-.menu-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.menu-lateral {
-  position: absolute;
-  top: 55px;
-  right: 0;
-  width: 260px;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  display: none;
-  flex-direction: column;
-  gap: 25px;
-  z-index: 9999;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25); /* Sombra para resaltar sobre el banner */
-}
-
-.menu-lateral a {
-  color: #8c1d0d;
-  text-decoration: none;
-  font-size: 20px;
-  font-family: serif;
-}
-
-.menu-lateral a:hover {
-  color: rgb(0, 0, 0);
-}
-
-/* Activar despliegue al hacer Hover */
-.menu-container:hover .menu-lateral {
-  display: flex;
 }
 
 /* ====== BANNER ====== */
@@ -250,23 +211,26 @@ h3 {
 .creations-grid img:hover {
   border-color: #8b2510;
 }
-/*footer*/
-.pie-pagina{
-    width: 100%;
-    background-color: #8c1d0d;
-    color: #fff;
-    margin-top: 50px;
+
+/* ====== FOOTER ====== */
+.pie-pagina {
+  width: 100%;
+  background-color: #8c1d0d;
+  color: #fff;
+  margin-top: 50px;
 }
-.pie-pagina .grupo-1{
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    padding: 50px 0;
+
+.pie-pagina .grupo-1 {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 50px 0;
 }
-.pie-pagina .grupo-1 .box figure{
+
+.pie-pagina .grupo-1 .box figure {
   object-fit: contain;
   width: 100%;
   height: 100%;
@@ -275,76 +239,78 @@ h3 {
   align-items: center;
 }
 
-.pie-pagina .grupo-1 .box figure img{
-  width: 300px;  
+.pie-pagina .grupo-1 .box figure img {
+  width: 300px;
   height: auto;
   display: block;
   margin: auto;
 }
-.pie-pagina .grupo-1 .box h2{
-   color: #fdf6ec;
-    margin-bottom: 20px;
-    font-size: 28px;
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #fdf6ec;
+  margin-bottom: 20px;
+  font-size: 28px;
 }
 
-.pie-pagina .grupo-1 .box p{
-    color: #f5e6d3;
-    margin-bottom: 12px;
-    line-height: 1.6;
-    font-size: 18px;
-}
-.pie-pagina .box p i{
-    margin-right: 10px;
-    color: #fdf6ec;
-}
-.pie-pagina .red-social{
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-.pie-pagina .grupo-1 .red-social a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 50px;
-    height: 50px;
-
-    text-decoration: none;
-    color: #8c1d0d;
-
-    background-color: #fdf6ec;
-    border-radius: 10px;
-
-    font-size: 22px;
-    transition: 0.3s ease;
+.pie-pagina .grupo-1 .box p {
+  color: #f5e6d3;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 18px;
 }
 
-.pie-pagina .grupo-1 .red-social a:hover{
-     background-color: #d9b382;
-    transform: scale(1.1);
-}
-.red-pagos a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    margin-right: 10px;
-    background-color: #fdf6ec;
-    color: #8c1d0d;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 20px;
+.pie-pagina .box p i {
+  margin-right: 10px;
+  color: #fdf6ec;
 }
 
-.red-pagos a:hover{
-    background-color: #b71c1c;
-    color: white;
-    transform: translateY(-3px);
+.pie-pagina .red-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
 }
-.nequi{
+
+.pie-pagina .grupo-1 .red-social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  color: #8c1d0d;
+  background-color: #fdf6ec;
+  border-radius: 10px;
+  font-size: 22px;
+  transition: 0.3s ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  background-color: #d9b382;
+  transform: scale(1.1);
+}
+
+.red-pagos a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  background-color: #fdf6ec;
+  color: #8c1d0d;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.red-pagos a:hover {
+  background-color: #b71c1c;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.nequi {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -357,23 +323,66 @@ h3 {
   font-size: 18px;
   text-decoration: none;
 }
-.pie-pagina .grupo-2{
-    background-color: #6d1206;
-    padding: 18px;
+
+.pie-pagina .grupo-2 {
+  background-color: #6d1206;
+  padding: 18px;
+  text-align: center;
+  color: #fdf6ec;
+  font-size: 16px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media screen and (max-width: 900px) {
+  .pie-pagina .grupo-1 {
+    grid-template-columns: 1fr;
     text-align: center;
-    color: #fdf6ec;
-    font-size: 16px;
+  }
+
+  .pie-pagina .red-social {
+    justify-content: center;
+  }
 }
 
-/* RESPONSIVE */
-@media screen and (max-width:900px){
-
-    .pie-pagina .grupo-1{
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .pie-pagina .red-social{
-        justify-content: center;
+/* ====== MENÚ DESPLEGABLE ====== */
+.menu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
+
+.menu-lateral {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 290px;
+  background-color: #f8f8f8;
+  padding: 35px;
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+  gap: 28px;
+  z-index: 9999;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.20);
+}
+
+
+.menu-lateral a {
+  color: #8c1d0d;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: 0.3s;
+}
+
+.menu-lateral a:hover {
+  color: rgb(0, 0, 0);
+  transform: translateX(5px);
+}
+
+
+.menu-container:hover .menu-lateral {
+  display: flex;
 }

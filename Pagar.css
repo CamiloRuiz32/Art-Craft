@@ -1,4 +1,4 @@
-/* ====== ENCABEZADO Y RESET ====== */
+
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +34,7 @@ header {
   width: 90px;
 }
 
-/* ====== COMPORTAMIENTO DE ICONOS ====== */
+
 .nav-icons {
   display: flex;
   align-items: center;
@@ -43,7 +43,7 @@ header {
   flex-shrink: 0;
 }
 
-/* Diseño de botones circulares blancos */
+
 .nav-icons > a,
 .menu-container .btn-menu {
   width: 45px;
@@ -60,14 +60,14 @@ header {
   cursor: pointer;
 }
 
-/* Botón alargado especial de "Inicio" */
+
 .nav-icons > a:first-child {
   width: auto;
   padding: 0 18px;
   border-radius: 20px;
 }
 
-/* Efectos Hover y Active */
+
 .nav-icons > a:hover,
 .menu-container .btn-menu:hover {
   background: #000000;
@@ -80,7 +80,7 @@ header {
   color: #ffffff;
 }
 
-/* ====== BUSCADOR FLUIDO ====== */
+
 .contenedor-busqueda {
   position: relative;
   flex: 1; 
@@ -115,7 +115,7 @@ header {
   }
 }
 
-/* ====== COMPORTAMIENTO DEL MENÚ DESPLEGABLE ====== */
+
 .menu-container {
   position: relative;
   display: flex;
@@ -148,12 +148,12 @@ header {
   color: rgb(0, 0, 0);
 }
 
-/* Desplegar el menú cuando el mouse pasa sobre el contenedor */
+
 .menu-container:hover .menu-lateral {
   display: flex;
 }
 
-/* ===== CUADRO PRINCIPAL DE PAGO ===== */
+
 .payment-container {
   background-color: #fcefdc;
   border: 1px solid #d6bfa5;
@@ -178,7 +178,7 @@ header {
   margin-bottom: 20px;
 }
 
-/* ===== TABS DE MÉTODOS DE PAGO ===== */
+
 .tabs {
   display: flex;
   justify-content: space-between;
@@ -210,7 +210,7 @@ header {
   background: #d6bfa5;
 }
 
-/* ===== FORMULARIO DE TARJETA ===== */
+
 .card-form {
   background-color: #fcefdc;
   border-radius: 10px;
@@ -253,7 +253,7 @@ header {
   box-shadow: 0 0 5px rgba(139,37,16,0.3);
 }
 
-/* Sección de vencimiento */
+
 .expiry {
   display: flex;
   gap: 10px;
@@ -263,7 +263,7 @@ header {
   flex: 1;
 }
 
-/* Botón de pagar */
+
 .pay-btn {
   width: 100%;
   padding: 16px;

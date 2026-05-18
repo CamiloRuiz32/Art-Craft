@@ -1,4 +1,4 @@
-/* /* ====== RESET Y ESTILOS GLOBALES ====== */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   background-color: #FBE9D0;
 }
 
-/* ====== ENCABEZADO Y BARRA DE NAVEGACIÓN ====== */
+
 header {
   background-color: #8c1d0d;
   padding: 0px 20px;
@@ -35,7 +35,7 @@ header {
   width: 90px;
 }
 
-/* ====== BOTONES E ICONOS DE LA BARRA ====== */
+
 .nav-icons {
   display: flex;
   align-items: center;
@@ -44,7 +44,7 @@ header {
   flex-shrink: 0;
 }
 
-/* Diseño de esferas blancas unificadas */
+
 .nav-icons > a,
 .menu-container .btn-menu {
   width: 45px;
@@ -61,14 +61,14 @@ header {
   cursor: pointer;
 }
 
-/* Botón adaptativo para "Inicio" */
+
 .nav-icons > a:first-child {
   width: auto;
   padding: 0 18px;
   border-radius: 20px;
 }
 
-/* Estados de interacción */
+
 .nav-icons > a:hover,
 .menu-container .btn-menu:hover {
   background: #000000;
@@ -81,7 +81,7 @@ header {
   color: #ffffff;
 }
 
-/* ====== BUSCADOR DINÁMICO ====== */
+
 .contenedor-busqueda {
   position: relative;
   flex: 1;
@@ -116,7 +116,7 @@ header {
   }
 }
 
-/* ====== COMPORTAMIENTO MENÚ LATERAL ====== */
+
 .menu-container {
   position: relative;
   display: flex;
@@ -158,7 +158,7 @@ header {
 .menu-container:hover .menu-lateral {
   display: flex;
 }
-/* ====== PRODUCTO ====== */
+
 .producto-detalle {
   width: 100%;
 }
@@ -286,7 +286,7 @@ header {
   box-shadow: 0 0 12px #fff;
 }
 
-/* ====== OPINIONES ====== */
+
 .reviews,
 .opiniones {
   margin-top: 40px;
@@ -433,90 +433,138 @@ header {
   transition: 0.3s ease;
 }
 
-@media (max-width: 900px) {
-  header,
-  .topbar {
-    height: auto;
-    padding: 14px 18px;
-  }
 
-  .navbar,
-  .container,
-  header,
-  .topbar {
-    flex-direction: column;
-    gap: 14px;
-  }
 
-  .logo-container,
-  .logo-section {
-    gap: 18px;
-  }
-
-  .logo-text,
-  .logo-section h1 {
-    font-size: 30px;
-  }
-
-  nav,
-  .nav-links,
-  .icons,
-  .nav-icons {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .contenedor-busqueda {
-    width: 100%;
-  }
-
-  .contenedor-busqueda i {
-    right: 18px;
-  }
-
-  .product-card,
-  .tarjeta-producto {
-    width: min(100% - 28px, 640px);
-    padding-top: 20px;
-  }
-
-  .product-content,
-  .seccion-superior {
-    gap: 24px;
-  }
-
-  .product-image,
-  .imagen-producto {
-    width: min(100%, 320px);
-  }
-
-  .product-info h1,
-  .info-producto h1 {
-    font-size: 30px;
-  }
-
-  .product-info p,
-  .info-producto p {
-    font-size: 16px;
-  }
-
-  .product-info h2,
-  .precio {
-    font-size: 28px;
-  }
-
-  .btn {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  .reviews h3,
-  .opiniones h2 {
-    font-size: 23px;
-  }
-
-  .score,
-  .calificacion {
-    font-size: 30px;
+@media (max-width: 700px) {
+  .formulario {
+    width: 95%;
+    padding: 25px;
   }
 }
+.pie-pagina{
+    width: 100%;
+    background-color: #8c1d0d;
+    color: #fff;
+    margin-top: 50px;
+}
+.pie-pagina .grupo-1{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 50px 0;
+}
+.pie-pagina .grupo-1 .box figure{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+  width: 300px;  
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.pie-pagina .grupo-1 .box h2{
+   color: #fdf6ec;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #f5e6d3;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.pie-pagina .box p i{
+    margin-right: 10px;
+    color: #fdf6ec;
+}
+.pie-pagina .red-social{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+
+    text-decoration: none;
+    color: #8c1d0d;
+
+    background-color: #fdf6ec;
+    border-radius: 10px;
+
+    font-size: 22px;
+    transition: 0.3s ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+     background-color: #d9b382;
+    transform: scale(1.1);
+}
+.red-pagos a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    background-color: #fdf6ec;
+    color: #8c1d0d;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.red-pagos a:hover{
+    background-color: #b71c1c;
+    color: white;
+    transform: translateY(-3px);
+}
+.nequi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #8c1d0d;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+.pie-pagina .grupo-2{
+    background-color: #6d1206;
+    padding: 18px;
+    text-align: center;
+    color: #fdf6ec;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width:900px){
+
+    .pie-pagina .grupo-1{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .pie-pagina .red-social{
+        justify-content: center;
+}
+}
+
