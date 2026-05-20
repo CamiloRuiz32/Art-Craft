@@ -11,10 +11,11 @@
 
 <header>
     <nav class="navbar">
-
-      <div class="logo">
-        <img src="/Imagenes/logo4.png" alt="Logo">
-      </div>
+      <a href="Inicio.html">
+          <div class="logo">
+            <img src="/Imagenes/logo4.png" alt="Logo">
+          </div>
+      </a>  
 
       <div class="contenedor-busqueda">
         <input class="search-box" type="text" placeholder="Buscar producto...">
@@ -22,17 +23,17 @@
       </div>
 
       <div class="nav-icons">
-          <a href="#">Inicio</a>
+          <a href="Inicio.html">Inicio</a>
 
-          <a href="#">
+          <a href="PerfilArtesano.html">
               <i class="fa-solid fa-user"></i>
           </a>
 
-          <a href="#">
+          <a href="Notificaciones.html">
               <i class="fa-solid fa-bell"></i>
           </a>
 
-          <a href="#">
+          <a href="Carritoartesano.html">
               <i class="fa-solid fa-cart-shopping"></i>
           </a>
 
@@ -57,10 +58,11 @@
 
   <section class="producto-detalle">
     <div class="tarjeta-producto">
+      <a href="">
       <div class="volver">
         <i class="fa-solid fa-arrow-left"></i>
       </div>
-
+      </a>
       <div class="seccion-superior">
         <div class="imagen-producto">
           <img src="Imagenes/Mochilawayu.png.png" alt="Mochila Wayuu">
@@ -71,16 +73,15 @@
           <p>Tejidas con hilos que cuentan historias del agua y la naturaleza</p>
 
           <div class="precio">$120.000</div>
+          <a href="Carritoartesano.html" class="btn btn-carrito">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Agregar al carrito
+          </a>
 
-          <button class="btn btn-carrito" onclick="seleccionarBoton(this)">
-            <i class="fa-solid fa-cart-shopping"></i>
-            Agregar al carrito
-          </button>
-
-          <button class="btn btn-comprar" onclick="seleccionarBoton(this)">
-            <i class="fa-solid fa-house"></i>
-            Comprar ahora
-          </button>
+          <a href="Pagar.html" class="btn btn-comprar">
+              <i class="fa-solid fa-house"></i>
+              Comprar ahora
+          </a>
         </div>
       </div>
 
